@@ -1,0 +1,192 @@
+<?php
+$popupMeta = array (
+    'moduleMain' => 'Account',
+    'varName' => 'ACCOUNT',
+    'orderBy' => 'name',
+    'whereClauses' => array (
+  'name' => 'accounts.name',
+  'primernombre_c' => 'accounts_cstm.primernombre_c',
+  'segundonombre_c' => 'accounts_cstm.segundonombre_c',
+  'primerapellido_c' => 'accounts_cstm.primerapellido_c',
+  'segundoapellido_c' => 'accounts_cstm.segundoapellido_c',
+  'estado_c' => 'accounts_cstm.estado_c',
+  'tipocobertura_c' => 'accounts_cstm.tipocobertura_c',
+  'epsactual_c' => 'accounts.epsactual_c',
+  'ipsactual_c' => 'accounts.ipsactual_c',
+),
+    'searchInputs' => array (
+  0 => 'name',
+  3 => 'primernombre_c',
+  4 => 'segundonombre_c',
+  5 => 'primerapellido_c',
+  6 => 'segundoapellido_c',
+  7 => 'estado_c',
+  9 => 'tipocobertura_c',
+  10 => 'epsactual_c',
+  11 => 'ipsactual_c',
+),
+    'create' => array (
+  'formBase' => 'AccountFormBase.php',
+  'formBaseClass' => 'AccountFormBase',
+  'getFormBodyParams' => 
+  array (
+    0 => '',
+    1 => '',
+    2 => 'AccountSave',
+  ),
+  'createButton' => 'LNK_NEW_ACCOUNT',
+),
+    'searchdefs' => array (
+  'name' => 
+  array (
+    'name' => 'name',
+    'width' => '10%',
+  ),
+  'primernombre_c' => 
+  array (
+    'type' => 'varchar',
+    'label' => 'LBL_PRIMERNOMBRE',
+    'width' => '10%',
+    'name' => 'primernombre_c',
+  ),
+  'segundonombre_c' => 
+  array (
+    'type' => 'varchar',
+    'label' => 'LBL_SEGUNDONOMBRE',
+    'width' => '10%',
+    'name' => 'segundonombre_c',
+  ),
+  'primerapellido_c' => 
+  array (
+    'type' => 'varchar',
+    'label' => 'LBL_PRIMERAPELLIDO',
+    'width' => '10%',
+    'name' => 'primerapellido_c',
+  ),
+  'segundoapellido_c' => 
+  array (
+    'type' => 'varchar',
+    'label' => 'LBL_SEGUNDOAPELLIDO',
+    'width' => '10%',
+    'name' => 'segundoapellido_c',
+  ),
+  'estado_c' => 
+  array (
+    'type' => 'enum',
+    'studio' => 'visible',
+    'label' => 'LBL_ESTADO',
+    'width' => '10%',
+    'name' => 'estado_c',
+  ),
+  'tipocobertura_c' => 
+  array (
+    'type' => 'enum',
+    'studio' => 'visible',
+    'label' => 'LBL_TIPOCOBERTURA',
+    'width' => '10%',
+    'name' => 'tipocobertura_c',
+  ),
+  'epsactual_c' => 
+  array (
+    'type' => 'relate',
+    'studio' => 'visible',
+    'label' => 'LBL_EPSACTUAL',
+    'id' => 'EPS_EPS_ID_C',
+    'link' => true,
+    'width' => '10%',
+    'name' => 'epsactual_c',
+  ),
+  'ipsactual_c' => 
+  array (
+    'type' => 'relate',
+    'studio' => 'visible',
+    'label' => 'LBL_IPSACTUAL',
+    'id' => 'IPS_IPS_ID_C',
+    'link' => true,
+    'width' => '10%',
+    'name' => 'ipsactual_c',
+  ),
+),
+    'listviewdefs' => array (
+  'NAME' => 
+  array (
+    'width' => '40%',
+    'label' => 'LBL_LIST_ACCOUNT_NAME',
+    'link' => true,
+    'default' => true,
+    'name' => 'name',
+  ),
+  'PRIMERNOMBRE_C' => 
+  array (
+    'type' => 'varchar',
+    'default' => true,
+    'label' => 'LBL_PRIMERNOMBRE',
+    'width' => '10%',
+    'name' => 'primernombre_c',
+  ),
+  'SEGUNDONOMBRE_C' => 
+  array (
+    'type' => 'varchar',
+    'default' => true,
+    'label' => 'LBL_SEGUNDONOMBRE',
+    'width' => '10%',
+    'name' => 'segundonombre_c',
+  ),
+  'PRIMERAPELLIDO_C' => 
+  array (
+    'type' => 'varchar',
+    'default' => true,
+    'label' => 'LBL_PRIMERAPELLIDO',
+    'width' => '10%',
+    'name' => 'primerapellido_c',
+  ),
+  'SEGUNDOAPELLIDO_C' => 
+  array (
+    'type' => 'varchar',
+    'default' => true,
+    'label' => 'LBL_SEGUNDOAPELLIDO',
+    'width' => '10%',
+    'name' => 'segundoapellido_c',
+  ),
+  'ESTADO_C' => 
+  array (
+    'type' => 'enum',
+    'default' => true,
+    'studio' => 'visible',
+    'label' => 'LBL_ESTADO',
+    'width' => '10%',
+    'name' => 'estado_c',
+  ),
+  'TIPOCOBERTURA_C' => 
+  array (
+    'type' => 'enum',
+    'default' => true,
+    'studio' => 'visible',
+    'label' => 'LBL_TIPOCOBERTURA',
+    'width' => '10%',
+    'name' => 'tipocobertura_c',
+  ),
+  'EPSACTUAL_C' => 
+  array (
+    'type' => 'relate',
+    'default' => true,
+    'studio' => 'visible',
+    'label' => 'LBL_EPSACTUAL',
+    'id' => 'EPS_EPS_ID_C',
+    'link' => true,
+    'width' => '10%',
+    'name' => 'epsactual_c',
+  ),
+  'IPSACTUAL_C' => 
+  array (
+    'type' => 'relate',
+    'default' => true,
+    'studio' => 'visible',
+    'label' => 'LBL_IPSACTUAL',
+    'id' => 'IPS_IPS_ID_C',
+    'link' => true,
+    'width' => '10%',
+    'name' => 'ipsactual_c',
+  ),
+),
+);

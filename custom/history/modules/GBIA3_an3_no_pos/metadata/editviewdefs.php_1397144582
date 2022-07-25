@@ -1,0 +1,393 @@
+<?php
+$module_name = 'GBIA3_an3_no_pos';
+$viewdefs [$module_name] = 
+array (
+  'EditView' => 
+  array (
+    'templateMeta' => 
+    array (
+      'maxColumns' => '2',
+      'widths' => 
+      array (
+        0 => 
+        array (
+          'label' => '10',
+          'field' => '30',
+        ),
+        1 => 
+        array (
+          'label' => '10',
+          'field' => '30',
+        ),
+      ),
+      'useTabs' => false,
+      'tabDefs' => 
+      array (
+        'DEFAULT' => 
+        array (
+          'newTab' => false,
+          'panelDefault' => 'expanded',
+        ),
+        'LBL_EDITVIEW_PANEL1' => 
+        array (
+          'newTab' => false,
+          'panelDefault' => 'expanded',
+        ),
+        'LBL_EDITVIEW_PANEL2' => 
+        array (
+          'newTab' => false,
+          'panelDefault' => 'expanded',
+        ),
+        'LBL_EDITVIEW_PANEL7' => 
+        array (
+          'newTab' => false,
+          'panelDefault' => 'expanded',
+        ),
+        'LBL_EDITVIEW_PANEL3' => 
+        array (
+          'newTab' => false,
+          'panelDefault' => 'expanded',
+        ),
+        'LBL_EDITVIEW_PANEL4' => 
+        array (
+          'newTab' => false,
+          'panelDefault' => 'expanded',
+        ),
+        'LBL_EDITVIEW_PANEL5' => 
+        array (
+          'newTab' => false,
+          'panelDefault' => 'expanded',
+        ),
+        'LBL_EDITVIEW_PANEL6' => 
+        array (
+          'newTab' => false,
+          'panelDefault' => 'expanded',
+        ),
+      ),
+      'syncDetailEditViews' => false,
+    ),
+    'panels' => 
+    array (
+      'default' => 
+      array (
+        0 => 
+        array (
+          0 => 'name',
+          1 => 
+          array (
+            'name' => 'estado',
+            'studio' => 'visible',
+            'label' => 'LBL_ESTADO',
+          ),
+        ),
+      ),
+      'lbl_editview_panel1' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            'name' => 'prestador',
+            'studio' => 'visible',
+            'label' => 'LBL_PRESTADOR',
+          ),
+        ),
+      ),
+      'lbl_editview_panel2' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            'name' => 'eps',
+            'studio' => 'visible',
+            'label' => 'LBL_EPS',
+          ),
+          1 => 
+          array (
+            'name' => 'formaenvisolicitud',
+            'studio' => 'visible',
+            'label' => 'LBL_FORMAENVISOLICITUD',
+          ),
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            'name' => 'fechaenviosolicitud',
+            'label' => 'LBL_FECHAENVIOSOLICITUD',
+          ),
+          1 => 
+          array (
+            'name' => 'responsableseguimiento',
+            'studio' => 'visible',
+            'label' => 'LBL_RESPONSABLESEGUIMIENTO',
+          ),
+        ),
+        2 => 
+        array (
+          0 => 
+          array (
+            'name' => 'fechaseguinicial',
+            'label' => 'LBL_FECHASEGUINICIAL',
+          ),
+        ),
+      ),
+      'lbl_editview_panel7' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            'name' => 'paciente',
+            'studio' => 'visible',
+            'label' => 'LBL_PACIENTE',
+            'displayParams' => 
+            array (
+              'field_to_name_array' => 
+              array (
+                'id' => 'account_id_c',
+                'name' => 'paciente',
+                'primernombre_c' => 'primernombre',
+                'segundonombre_c' => 'segundonombre_c',
+                'primerapellido_c' => 'primerapellido',
+                'segundoapellido_c' => 'segundoapellido',
+                'celular_c' => 'celular',
+                'telefonopersonal_c' => 'celular_p_c',
+                'email1' => 'email_p_c',
+              ),
+            ),
+          ),
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            'name' => 'primernombre',
+            'label' => 'LBL_PRIMERNOMBRE',
+            'customCode' => '<input name="primernombre" id="primernombre" size="30" maxlength="100" 
+			 type="text" value="{$fields.primernombre.value}" OnFocus="this.blur()">',
+          ),
+          1 => 
+          array (
+            'name' => 'segundonombre_c',
+            'label' => 'LBL_SEGUNDONOMBRE_C',
+            'customCode' => '<input name="segundonombre_c" id="segundonombre_c" size="30" maxlength="100" 
+			 type="text" value="{$fields.segundonombre_c.value}" OnFocus="this.blur()">',
+          ),
+        ),
+        2 => 
+        array (
+          0 => 
+          array (
+            'name' => 'primerapellido',
+            'label' => 'LBL_PRIMERAPELLIDO',
+            'customCode' => '<input name="primerapellido" id="primerapellido" size="30" maxlength="100" 
+			 type="text" value="{$fields.primerapellido.value}" OnFocus="this.blur()">',
+          ),
+          1 => 
+          array (
+            'name' => 'segundoapellido',
+            'label' => 'LBL_SEGUNDOAPELLIDO',
+            'customCode' => '<input name="segundoapellido" id="segundoapellido" size="30" maxlength="100" 
+			 type="text" value="{$fields.segundoapellido.value}" OnFocus="this.blur()">',
+          ),
+        ),
+        3 => 
+        array (
+          0 => 
+          array (
+            'name' => 'celular',
+            'label' => 'LBL_CELULAR',
+            'customCode' => '<input name="celular" id="celular" size="30" celular="100" 
+			 type="text" value="{$fields.celular.value}" OnFocus="this.blur()">',
+          ),
+          1 => 
+          array (
+            'name' => 'celular_p_c',
+            'label' => 'LBL_CELULAR_P',
+            'customCode' => '<input name="celular_p_c" id="celular_p_c" size="30" celular_p_c="100" 
+			 type="text" value="{$fields.celular_p_c.value}" OnFocus="this.blur()">',
+          ),
+        ),
+        4 => 
+        array (
+          0 => 
+          array (
+            'name' => 'email_p_c',
+            'label' => 'LBL_EMAIL_P',
+            'customCode' => '<input name="email_p_c" id="email_p_c" size="30" email_p_c="100" 
+			 type="text" value="{$fields.email_p_c.value}" OnFocus="this.blur()">',
+          ),
+        ),
+      ),
+      'lbl_editview_panel3' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            'name' => 'origenatencion',
+            'studio' => 'visible',
+            'label' => 'LBL_ORIGENATENCION',
+          ),
+          1 => 
+          array (
+            'name' => 'tiposerviciosolicitado',
+            'studio' => 'visible',
+            'label' => 'LBL_TIPOSERVICIOSOLICITADO',
+          ),
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            'name' => 'prioridadatencion2',
+            'studio' => 'visible',
+            'label' => 'LBL_PRIORIDADATENCION2',
+          ),
+        ),
+      ),
+      'lbl_editview_panel4' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            'name' => 'ubicacion',
+            'studio' => 'visible',
+            'label' => 'LBL_UBICACION',
+          ),
+          1 => 
+          array (
+            'name' => 'servicio',
+            'label' => 'LBL_SERVICIO',
+          ),
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            'name' => 'cama',
+            'label' => 'LBL_CAMA',
+          ),
+        ),
+      ),
+      'lbl_editview_panel5' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            'name' => 'codigodiagnosticoppal',
+            'studio' => 'visible',
+            'label' => 'LBL_CODIGODIAGNOSTICOPPAL',
+          ),
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            'name' => 'codigodiagnostico',
+            'studio' => 'visible',
+            'label' => 'LBL_CODIGODIAGNOSTICO',
+          ),
+        ),
+        2 => 
+        array (
+          0 => 
+          array (
+            'name' => 'codigodiagnosticorelacion',
+            'studio' => 'visible',
+            'label' => 'LBL_CODIGODIAGNOSTICORELACION',
+          ),
+        ),
+      ),
+      'lbl_editview_panel6' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            'name' => 'especialist',
+            'studio' => 'visible',
+            'label' => 'LBL_ESPECIALIST',
+            'displayParams' => 
+            array (
+              'field_to_name_array' => 
+              array (
+                'id' => 'esp_especialista_id_c',
+                'name' => 'especialist',
+                'nombres' => 'nombresolicitante',
+                'apellidos' => 'apellidossolicitante',
+                'cargo' => 'cargo_acti',
+                'telppal' => 'telefonosolicitante',
+                'extension' => 'extensionsolicitante',
+                'telcel' => 'celularsolicitante',
+              ),
+            ),
+          ),
+          1 => 
+          array (
+            'name' => 'nombresolicitante',
+            'label' => 'LBL_NOMBRESOLICITANTE',
+            'customCode' => '<input name="nombresolicitante" id="nombresolicitante" size="30" nombresolicitante="100" 
+			 type="text" value="{$fields.nombresolicitante.value}" OnFocus="this.blur()">',
+          ),
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            'name' => 'telefonosolicitante',
+            'label' => 'LBL_TELEFONOSOLICITANTE',
+            'customCode' => '<input name="telefonosolicitante" id="telefonosolicitante" size="30" telefonosolicitante="100" 
+			type="text" value="{$fields.telefonosolicitante.value}" OnFocus="this.blur()">',
+          ),
+          1 => 
+          array (
+            'name' => 'apellidossolicitante',
+            'label' => 'LBL_APELLIDOSSOLICITANTE',
+            'customCode' => '<input name="apellidossolicitante" id="apellidossolicitante" size="30" apellidossolicitante="100" 
+			type="text" value="{$fields.apellidossolicitante.value}" OnFocus="this.blur()">',
+          ),
+        ),
+        2 => 
+        array (
+          0 => 
+          array (
+            'name' => 'extensionsolicitante',
+            'label' => 'LBL_EXTENSIONSOLICITANTE',
+            'customCode' => '<input name="extensionsolicitante" id="extensionsolicitante" size="30" extensionsolicitante="100" 
+			type="text" value="{$fields.extensionsolicitante.value}" OnFocus="this.blur()">',
+          ),
+          1 => 
+          array (
+            'name' => 'celularsolicitante',
+            'label' => 'LBL_CELULARSOLICITANTE',
+            'customCode' => '<input name="celularsolicitante" id="celularsolicitante" size="30" celularsolicitante="100" 
+			type="text" value="{$fields.celularsolicitante.value}" OnFocus="this.blur()">',
+          ),
+        ),
+        3 => 
+        array (
+          0 => 
+          array (
+            'name' => 'correoemail',
+            'label' => 'LBL_CORREOEMAIL',
+            'customCode' => '<input name="correoemail" id="correoemail" size="30" correoemail="100" 
+			type="text" value="{$fields.correoemail.value}" OnFocus="this.blur()">',
+          ),
+          1 => 
+          array (
+            'name' => 'cargo_acti',
+            'label' => 'LBL_CARGO_ACTI',
+            'customCode' => '<input name="cargo_acti" id="cargo_acti" size="30" cargo_acti="100" 
+			type="text" value="{$fields.cargo_acti.value}" OnFocus="this.blur()">',
+          ),
+        ),
+      ),
+    ),
+  ),
+);
+?>

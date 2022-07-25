@@ -1,0 +1,55 @@
+<?php
+$popupMeta = array (
+    'moduleMain' => 'ISS_ISS',
+    'varName' => 'ISS_ISS',
+    'orderBy' => 'iss_iss.name',
+    'whereClauses' => array (
+  'name' => 'iss_iss.name',
+),
+    'searchInputs' => array (
+  0 => 'iss_iss_number',
+  1 => 'name',
+  2 => 'priority',
+  3 => 'status',
+),
+    'listviewdefs' => array (
+  'REFERENCIA' => 
+  array (
+    'type' => 'varchar',
+    'label' => 'LBL_REFERENCIA',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'NAME' => 
+  array (
+    'type' => 'name',
+    'link' => true,
+    'label' => 'LBL_NAME',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'DESCRIPTION' => 
+  array (
+    'type' => 'text',
+    'label' => 'LBL_DESCRIPTION',
+    'sortable' => false,
+    'width' => '10%',
+    'default' => true,
+  ),
+  'UVR' => 
+  array (
+    'type' => 'int',
+    'label' => 'LBL_UVR',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'ESTADO' => 
+  array (
+    'type' => 'enum',
+    'default' => true,
+    'studio' => 'visible',
+    'label' => 'LBL_ESTADO',
+    'width' => '10%',
+  ),
+),
+);

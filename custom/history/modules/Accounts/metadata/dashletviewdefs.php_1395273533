@@ -1,0 +1,411 @@
+<?php
+$dashletData['AccountsDashlet']['searchFields'] = array (
+  'name' => 
+  array (
+    'default' => '',
+  ),
+  'primernombre_c' => 
+  array (
+    'default' => '',
+  ),
+  'segundonombre_c' => 
+  array (
+    'default' => '',
+  ),
+  'primerapellido_c' => 
+  array (
+    'default' => '',
+  ),
+  'segundoapellido_c' => 
+  array (
+    'default' => '',
+  ),
+  'estado_c' => 
+  array (
+    'default' => '',
+  ),
+  'tipopaciente_c' => 
+  array (
+    'default' => '',
+  ),
+  'tipocobertura_c' => 
+  array (
+    'default' => '',
+  ),
+  'epsactual_c' => 
+  array (
+    'default' => '',
+  ),
+  'ipsactual_c' => 
+  array (
+    'default' => '',
+  ),
+);
+$dashletData['AccountsDashlet']['columns'] = array (
+  'name' => 
+  array (
+    'width' => '40%',
+    'label' => 'LBL_LIST_ACCOUNT_NAME',
+    'link' => true,
+    'default' => true,
+    'name' => 'name',
+  ),
+  'primernombre_c' => 
+  array (
+    'type' => 'varchar',
+    'default' => true,
+    'label' => 'LBL_PRIMERNOMBRE',
+    'width' => '10%',
+    'name' => 'primernombre_c',
+  ),
+  'segundonombre_c' => 
+  array (
+    'type' => 'varchar',
+    'default' => true,
+    'label' => 'LBL_SEGUNDONOMBRE',
+    'width' => '10%',
+    'name' => 'segundonombre_c',
+  ),
+  'primerapellido_c' => 
+  array (
+    'type' => 'varchar',
+    'default' => true,
+    'label' => 'LBL_PRIMERAPELLIDO',
+    'width' => '10%',
+    'name' => 'primerapellido_c',
+  ),
+  'segundoapellido_c' => 
+  array (
+    'type' => 'varchar',
+    'default' => true,
+    'label' => 'LBL_SEGUNDOAPELLIDO',
+    'width' => '10%',
+    'name' => 'segundoapellido_c',
+  ),
+  'estado_c' => 
+  array (
+    'type' => 'enum',
+    'default' => true,
+    'studio' => 'visible',
+    'label' => 'LBL_ESTADO',
+    'width' => '10%',
+    'name' => 'estado_c',
+  ),
+  'tipopaciente_c' => 
+  array (
+    'type' => 'enum',
+    'default' => true,
+    'studio' => 'visible',
+    'label' => 'LBL_TIPOPACIENTE',
+    'width' => '10%',
+    'name' => 'tipopaciente_c',
+  ),
+  'tipocobertura_c' => 
+  array (
+    'type' => 'enum',
+    'default' => true,
+    'studio' => 'visible',
+    'label' => 'LBL_TIPOCOBERTURA',
+    'width' => '10%',
+    'name' => 'tipocobertura_c',
+  ),
+  'epsactual_c' => 
+  array (
+    'type' => 'relate',
+    'default' => true,
+    'studio' => 'visible',
+    'label' => 'LBL_EPSACTUAL',
+    'id' => 'EPS_EPS_ID_C',
+    'link' => true,
+    'width' => '10%',
+    'name' => 'epsactual_c',
+  ),
+  'ipsactual_c' => 
+  array (
+    'type' => 'relate',
+    'default' => true,
+    'studio' => 'visible',
+    'label' => 'LBL_IPSACTUAL',
+    'id' => 'IPS_IPS_ID_C',
+    'link' => true,
+    'width' => '10%',
+    'name' => 'ipsactual_c',
+  ),
+  'actividadindependiente_c' => 
+  array (
+    'type' => 'varchar',
+    'default' => false,
+    'label' => 'LBL_ACTIVIDADINDEPENDIENTE',
+    'width' => '10%',
+  ),
+  'cargoempresa_c' => 
+  array (
+    'type' => 'varchar',
+    'default' => false,
+    'label' => 'LBL_CARGOEMPRESA',
+    'width' => '10%',
+  ),
+  'actividadeconomica_c' => 
+  array (
+    'type' => 'multienum',
+    'default' => false,
+    'studio' => 'visible',
+    'label' => 'LBL_ACTIVIDADECONOMICA',
+    'width' => '10%',
+  ),
+  'ciudad_c' => 
+  array (
+    'type' => 'relate',
+    'default' => false,
+    'studio' => 'visible',
+    'label' => 'LBL_CIUDAD',
+    'id' => 'MUN_MUNICIPIO_ID_C',
+    'link' => true,
+    'width' => '10%',
+  ),
+  'comuna_c' => 
+  array (
+    'type' => 'relate',
+    'default' => false,
+    'studio' => 'visible',
+    'label' => 'LBL_COMUNA',
+    'id' => 'COM_COMUNAS_ID_C',
+    'link' => true,
+    'width' => '10%',
+  ),
+  'telefonopersonal_c' => 
+  array (
+    'type' => 'phone',
+    'default' => false,
+    'label' => 'LBL_TELEFONOPERSONAL',
+    'width' => '10%',
+  ),
+  'tipo_documento_c' => 
+  array (
+    'type' => 'enum',
+    'default' => false,
+    'studio' => 'visible',
+    'label' => 'LBL_TIPO_DOCUMENTO',
+    'width' => '10%',
+  ),
+  'pasatiempofavorito_c' => 
+  array (
+    'type' => 'multienum',
+    'default' => false,
+    'studio' => 'visible',
+    'label' => 'LBL_PASATIEMPOFAVORITO',
+    'width' => '10%',
+  ),
+  'telefonoempresa_c' => 
+  array (
+    'type' => 'phone',
+    'default' => false,
+    'label' => 'LBL_TELEFONOEMPRESA',
+    'width' => '10%',
+  ),
+  'telefonoadicional_c' => 
+  array (
+    'type' => 'phone',
+    'default' => false,
+    'label' => 'LBL_TELEFONOADICIONAL',
+    'width' => '10%',
+  ),
+  'pais_c' => 
+  array (
+    'type' => 'enum',
+    'default' => false,
+    'studio' => 'visible',
+    'label' => 'LBL_PAIS',
+    'width' => '10%',
+  ),
+  'origen_c' => 
+  array (
+    'type' => 'multienum',
+    'default' => false,
+    'studio' => 'visible',
+    'label' => 'LBL_ORIGEN',
+    'width' => '10%',
+  ),
+  'observacionesmercadeo_c' => 
+  array (
+    'type' => 'text',
+    'default' => false,
+    'studio' => 'visible',
+    'label' => 'LBL_OBSERVACIONESMERCADEO',
+    'sortable' => false,
+    'width' => '10%',
+  ),
+  'numerohijos_c' => 
+  array (
+    'type' => 'int',
+    'default' => false,
+    'label' => 'LBL_NUMEROHIJOS',
+    'width' => '10%',
+  ),
+  'numeroformulario_c' => 
+  array (
+    'type' => 'varchar',
+    'default' => false,
+    'label' => 'LBL_NUMEROFORMULARIO',
+    'width' => '10%',
+  ),
+  'municipio_c' => 
+  array (
+    'type' => 'relate',
+    'default' => false,
+    'studio' => 'visible',
+    'label' => 'LBL_MUNICIPIO',
+    'id' => 'MUN_MUNICIPIO_ID1_C',
+    'link' => true,
+    'width' => '10%',
+  ),
+  'lugartrabajo_c' => 
+  array (
+    'type' => 'varchar',
+    'default' => false,
+    'label' => 'LBL_LUGARTRABAJO',
+    'width' => '10%',
+  ),
+  'jornadacitas_c' => 
+  array (
+    'type' => 'multienum',
+    'default' => false,
+    'studio' => 'visible',
+    'label' => 'LBL_JORNADACITAS',
+    'width' => '10%',
+  ),
+  'leydata_c' => 
+  array (
+    'type' => 'bool',
+    'default' => false,
+    'label' => 'LBL_LEYDATA',
+    'width' => '10%',
+  ),
+  'genero_c' => 
+  array (
+    'type' => 'enum',
+    'default' => false,
+    'studio' => 'visible',
+    'label' => 'LBL_GENERO',
+    'width' => '10%',
+  ),
+  'fechanacimiento_c' => 
+  array (
+    'type' => 'date',
+    'default' => false,
+    'label' => 'LBL_FECHANACIMIENTO',
+    'width' => '10%',
+  ),
+  'estratoeconomico_c' => 
+  array (
+    'type' => 'enum',
+    'default' => false,
+    'studio' => 'visible',
+    'label' => 'LBL_ESTRATOECONOMICO',
+    'width' => '10%',
+  ),
+  'extensionempresa_c' => 
+  array (
+    'type' => 'phone',
+    'default' => false,
+    'label' => 'LBL_EXTENSIONEMPRESA',
+    'width' => '10%',
+  ),
+  'estadocivil_c' => 
+  array (
+    'type' => 'enum',
+    'default' => false,
+    'studio' => 'visible',
+    'label' => 'LBL_ESTADOCIVIL',
+    'width' => '10%',
+  ),
+  'direcciontredsocial_c' => 
+  array (
+    'type' => 'url',
+    'default' => false,
+    'label' => 'LBL_DIRECCIONTREDSOCIAL',
+    'width' => '10%',
+  ),
+  'direccionfredsocial_c' => 
+  array (
+    'type' => 'url',
+    'default' => false,
+    'label' => 'LBL_DIRECCIONFREDSOCIAL',
+    'width' => '10%',
+  ),
+  'direccionresidencia_c' => 
+  array (
+    'type' => 'text',
+    'default' => false,
+    'studio' => 'visible',
+    'label' => 'LBL_DIRECCIONRESIDENCIA',
+    'sortable' => false,
+    'width' => '10%',
+  ),
+  'departamento_c' => 
+  array (
+    'type' => 'relate',
+    'default' => false,
+    'studio' => 'visible',
+    'label' => 'LBL_DEPARTAMENTO',
+    'id' => 'DEP_DEPARTAMENTOS_ID_C',
+    'link' => true,
+    'width' => '10%',
+  ),
+  'clasificacionmercadeo_c' => 
+  array (
+    'type' => 'enum',
+    'default' => false,
+    'studio' => 'visible',
+    'label' => 'LBL_CLASIFICACIONMERCADEO',
+    'width' => '10%',
+  ),
+  'celular_c' => 
+  array (
+    'type' => 'phone',
+    'default' => false,
+    'label' => 'LBL_CELULAR',
+    'width' => '10%',
+  ),
+  'beneficios_c' => 
+  array (
+    'type' => 'text',
+    'default' => false,
+    'studio' => 'visible',
+    'label' => 'LBL_BENEFICIOS',
+    'sortable' => false,
+    'width' => '10%',
+  ),
+  'barrio_c' => 
+  array (
+    'type' => 'relate',
+    'default' => false,
+    'studio' => 'visible',
+    'label' => 'LBL_BARRIO',
+    'id' => 'BAR_BARRIO_ID_C',
+    'link' => true,
+    'width' => '10%',
+  ),
+  'acudiente_c' => 
+  array (
+    'type' => 'relate',
+    'default' => false,
+    'studio' => 'visible',
+    'label' => 'LBL_ACUDIENTE',
+    'id' => 'CONTACT_ID_C',
+    'link' => true,
+    'width' => '10%',
+  ),
+  'email1' => 
+  array (
+    'type' => 'varchar',
+    'studio' => 
+    array (
+      'editField' => true,
+      'searchview' => false,
+    ),
+    'label' => 'LBL_EMAIL',
+    'width' => '10%',
+    'default' => false,
+  ),
+);

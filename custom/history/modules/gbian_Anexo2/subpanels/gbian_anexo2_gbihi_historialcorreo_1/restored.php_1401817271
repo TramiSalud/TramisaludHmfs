@@ -1,0 +1,39 @@
+<?php
+// created: 2014-06-03 12:41:07
+$layout_defs = array (
+  'name' => 
+  array (
+    'vname' => 'LBL_NAME',
+    'widget_class' => 'SubPanelDetailViewLink',
+    'width' => '15%',
+    'default' => true,
+  ),
+  'correo_envio' => 
+  array (
+    'type' => 'varchar',
+    'vname' => 'LBL_CORREO_ENVIO',
+    'width' => '15%',
+    'default' => true,
+  ),
+  'fecha_envio_correo' => 
+  array (
+    'type' => 'datetimecombo',
+    'vname' => 'LBL_FECHA_ENVIO_CORREO',
+    'width' => '15%',
+    'default' => true,
+  ),
+  'numero_reintento' => 
+  array (
+    'type' => 'int',
+    'vname' => 'LBL_NUMERO_REINTENTO',
+    'width' => '15%',
+    'default' => true,
+  ),
+  'correo_enviado' => 
+  array (
+    'type' => 'bool',
+    'default' => true,
+    'vname' => 'LBL_CORREO_ENVIADO',
+    'width' => '15%',
+  ),
+);

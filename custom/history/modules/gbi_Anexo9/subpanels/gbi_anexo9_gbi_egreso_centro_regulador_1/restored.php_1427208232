@@ -1,0 +1,81 @@
+<?php
+// created: 2015-03-24 09:43:48
+$layout_defs = array (
+  'name' => 
+  array (
+    'vname' => 'LBL_NAME',
+    'widget_class' => 'SubPanelDetailViewLink',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'paciente' => 
+  array (
+    'type' => 'relate',
+    'studio' => 'visible',
+    'vname' => 'LBL_PACIENTE',
+    'id' => 'ACCOUNT_ID_C',
+    'link' => true,
+    'width' => '10%',
+    'default' => true,
+    'widget_class' => 'SubPanelDetailViewLink',
+    'target_module' => 'Accounts',
+    'target_record_key' => 'account_id_c',
+  ),
+  'nombres_apepaciente' => 
+  array (
+    'type' => 'varchar',
+    'vname' => 'LBL_NOMBRES_APEPACIENTE',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'segundonombre_c' => 
+  array (
+    'type' => 'varchar',
+    'default' => true,
+    'vname' => 'LBL_SEGUNDONOMBRE',
+    'width' => '10%',
+  ),
+  'primerapellido_c' => 
+  array (
+    'type' => 'varchar',
+    'default' => true,
+    'vname' => 'LBL_PRIMERAPELLIDO',
+    'width' => '10%',
+  ),
+  'segundoapellido_c' => 
+  array (
+    'type' => 'varchar',
+    'default' => true,
+    'vname' => 'LBL_SEGUNDOAPELLIDO',
+    'width' => '10%',
+  ),
+  'fecha_hora_cita' => 
+  array (
+    'type' => 'datetimecombo',
+    'vname' => 'LBL_FECHA_HORA_CITA',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'date_modified' => 
+  array (
+    'vname' => 'LBL_DATE_MODIFIED',
+    'width' => '45%',
+    'default' => true,
+  ),
+  'edit_button' => 
+  array (
+    'vname' => 'LBL_EDIT_BUTTON',
+    'widget_class' => 'SubPanelEditButton',
+    'module' => 'gbi_egreso_centro_regulador',
+    'width' => '4%',
+    'default' => true,
+  ),
+  'remove_button' => 
+  array (
+    'vname' => 'LBL_REMOVE',
+    'widget_class' => 'SubPanelRemoveButton',
+    'module' => 'gbi_egreso_centro_regulador',
+    'width' => '5%',
+    'default' => true,
+  ),
+);

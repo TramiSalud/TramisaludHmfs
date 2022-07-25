@@ -1,0 +1,25 @@
+<?php
+// created: 2014-03-10 14:40:03
+$mod_strings = array (
+  'LBL_ACCOUNT_NAME' => 'Paciente:',
+  'LBL_ACCOUNT_ID' => 'ID de cuenta',
+  'LBL_ACCOUNT' => 'Paciente',
+  'LBL_LIST_ACCOUNT_NAME' => 'Paciente',
+  'LBL_TIPODOCUMENTO' => 'Tipo Documento',
+  'LBL_FIRST_NAME' => 'Nombres Contacto',
+  'LBL_ESTADO' => 'Estado',
+  'LBL_TIPOCONTACTO' => 'Tipo Contacto',
+  'LBL_TELEFONOPRINCIPAL' => 'Tel. Principal',
+  'LBL_EXTENSION' => 'Extensión',
+  'LBL_TELEFONOCELULAR' => 'Tel. Celular',
+  'LBL_DIRECCIONPRINCIPAL' => 'Dirección Principal',
+  'LBL_PAIS' => 'País',
+  'LBL_DEPARTAMENTO_DEP_DEPARTAMENTOS_ID' => 'Departamento (related Departamentos ID)',
+  'LBL_DEPARTAMENTO' => 'Departamento',
+  'LBL_MUNICIPIO_MUN_MUNICIPIO_ID' => 'Municipio (related  ID)',
+  'LBL_MUNICIPIO' => 'Municipio',
+  'LBL_CARGACTIRELA' => 'Cargo/Actividad/Relación',
+  'LBL_LAST_NAME' => 'Nro. Documento',
+  'LBL_APELLIDOS' => 'Apellidos Contacto',
+  'LBL_REGISTROMEDICO' => 'Registro Médico',
+);

@@ -1,0 +1,49 @@
+<?php
+$popupMeta = array (
+    'moduleMain' => 'GBICU_CUPS',
+    'varName' => 'GBICU_CUPS',
+    'orderBy' => 'gbicu_cups.name',
+    'whereClauses' => array (
+  'name' => 'gbicu_cups.name',
+),
+    'searchInputs' => array (
+  0 => 'gbicu_cups_number',
+  1 => 'name',
+  2 => 'priority',
+  3 => 'status',
+),
+    'listviewdefs' => array (
+  'NAME' => 
+  array (
+    'type' => 'name',
+    'link' => true,
+    'label' => 'LBL_NAME',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'SUBCATEGORIA' => 
+  array (
+    'type' => 'varchar',
+    'label' => 'LBL_SUBCATEGORIA',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'ESTADOCUPS' => 
+  array (
+    'type' => 'enum',
+    'default' => true,
+    'studio' => 'visible',
+    'label' => 'LBL_ESTADOCUPS',
+    'width' => '10%',
+  ),
+  'ASSIGNED_USER_NAME' => 
+  array (
+    'link' => true,
+    'type' => 'relate',
+    'label' => 'LBL_ASSIGNED_TO_NAME',
+    'id' => 'ASSIGNED_USER_ID',
+    'width' => '10%',
+    'default' => true,
+  ),
+),
+);

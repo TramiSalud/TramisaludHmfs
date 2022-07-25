@@ -1,0 +1,68 @@
+<?php
+$popupMeta = array (
+    'moduleMain' => 'ESP_Especialista',
+    'varName' => 'ESP_Especialista',
+    'orderBy' => 'esp_especialista.name',
+    'whereClauses' => array (
+  'name' => 'esp_especialista.name',
+),
+    'searchInputs' => array (
+  0 => 'esp_especialista_number',
+  1 => 'name',
+  2 => 'priority',
+  3 => 'status',
+),
+    'listviewdefs' => array (
+  'NAME' => 
+  array (
+    'type' => 'name',
+    'link' => true,
+    'label' => 'LBL_NAME',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'NOMBRES' => 
+  array (
+    'type' => 'varchar',
+    'label' => 'LBL_NOMBRES',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'APELLIDOS' => 
+  array (
+    'type' => 'varchar',
+    'label' => 'LBL_APELLIDOS',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'CARGO' => 
+  array (
+    'type' => 'enum',
+    'default' => true,
+    'studio' => 'visible',
+    'label' => 'LBL_CARGO',
+    'width' => '10%',
+  ),
+  'CORREO' => 
+  array (
+    'type' => 'varchar',
+    'label' => 'LBL_CORREO',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'TELPPAL' => 
+  array (
+    'type' => 'phone',
+    'label' => 'LBL_TELPPAL',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'REGISTROMEDICO' => 
+  array (
+    'type' => 'varchar',
+    'label' => 'LBL_REGISTROMEDICO',
+    'width' => '10%',
+    'default' => true,
+  ),
+),
+);

@@ -1,0 +1,1 @@
+<h2><font color=red><!--{$message}-->No se puede enviar el anexo, este no tiene cups registrados</font></h2>

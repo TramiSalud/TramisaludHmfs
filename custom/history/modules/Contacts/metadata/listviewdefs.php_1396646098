@@ -1,0 +1,108 @@
+<?php
+$listViewDefs ['Contacts'] = 
+array (
+  'FULL_NAME' => 
+  array (
+    'type' => 'fullname',
+    'studio' => 
+    array (
+      'listview' => false,
+    ),
+    'label' => 'LBL_NAME',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'NAME' => 
+  array (
+    'width' => '20%',
+    'label' => 'LBL_LIST_NAME',
+    'link' => true,
+    'contextMenu' => 
+    array (
+      'objectType' => 'sugarPerson',
+      'metaData' => 
+      array (
+        'contact_id' => '{$ID}',
+        'module' => 'Contacts',
+        'return_action' => 'ListView',
+        'contact_name' => '{$FULL_NAME}',
+        'parent_id' => '{$ACCOUNT_ID}',
+        'parent_name' => '{$ACCOUNT_NAME}',
+        'return_module' => 'Contacts',
+        'parent_type' => 'Account',
+        'notes_parent_type' => 'Account',
+      ),
+    ),
+    'orderBy' => 'name',
+    'default' => true,
+    'related_fields' => 
+    array (
+      0 => 'first_name',
+      1 => 'last_name',
+      2 => 'salutation',
+      3 => 'account_name',
+      4 => 'account_id',
+    ),
+  ),
+  'LAST_NAME' => 
+  array (
+    'type' => 'varchar',
+    'label' => 'LBL_LAST_NAME',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'FIRST_NAME' => 
+  array (
+    'type' => 'varchar',
+    'label' => 'LBL_FIRST_NAME',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'APELLIDOS_C' => 
+  array (
+    'type' => 'varchar',
+    'default' => true,
+    'label' => 'LBL_APELLIDOS',
+    'width' => '10%',
+  ),
+  'EMAIL1' => 
+  array (
+    'width' => '15%',
+    'label' => 'LBL_LIST_EMAIL_ADDRESS',
+    'sortable' => false,
+    'link' => true,
+    'customCode' => '{$EMAIL1_LINK}{$EMAIL1}</a>',
+    'default' => true,
+  ),
+  'TELEFONOPRINCIPAL_C' => 
+  array (
+    'type' => 'phone',
+    'default' => true,
+    'label' => 'LBL_TELEFONOPRINCIPAL',
+    'width' => '10%',
+  ),
+  'TELEFONOCELULAR_C' => 
+  array (
+    'type' => 'phone',
+    'default' => true,
+    'label' => 'LBL_TELEFONOCELULAR',
+    'width' => '10%',
+  ),
+  'TIPOCONTACTO_C' => 
+  array (
+    'type' => 'enum',
+    'default' => true,
+    'studio' => 'visible',
+    'label' => 'LBL_TIPOCONTACTO',
+    'width' => '10%',
+  ),
+  'CARGACTIRELA_C' => 
+  array (
+    'type' => 'enum',
+    'default' => true,
+    'studio' => 'visible',
+    'label' => 'LBL_CARGACTIRELA',
+    'width' => '10%',
+  ),
+);
+?>

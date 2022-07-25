@@ -1,0 +1,76 @@
+<?php
+// created: 2014-04-11 13:00:23
+$subpanel_layout['list_fields'] = array (
+  'name' => 
+  array (
+    'type' => 'name',
+    'vname' => 'LBL_SUBJECT',
+    'width' => '10%',
+    'default' => true,
+	'type' => 'link',
+  ),
+  'status' => 
+  array (
+    'widget_class' => 'SubPanelActivitiesStatusField',
+    'vname' => 'LBL_LIST_STATUS',
+    'width' => '15%',
+    'default' => true,
+  ),
+  'date_start' => 
+  array (
+    'type' => 'datetimecombo',
+    'studio' => 
+    array (
+      'required' => true,
+      'no_duplicate' => true,
+    ),
+    'vname' => 'LBL_START_DATE',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'date_due' => 
+  array (
+    'type' => 'datetimecombo',
+    'studio' => 
+    array (
+      'required' => true,
+      'no_duplicate' => true,
+    ),
+    'vname' => 'LBL_DUE_DATE',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'date_modified' => 
+  array (
+    'vname' => 'LBL_LIST_DATE_MODIFIED',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'edit_button' => 
+  array (
+    'vname' => 'LBL_EDIT_BUTTON',
+    'widget_class' => 'SubPanelEditButton',
+    'width' => '2%',
+    'default' => true,
+  ),
+  'remove_button' => 
+  array (
+    'vname' => 'LBL_REMOVE',
+    'widget_class' => 'SubPanelRemoveButton',
+    'width' => '2%',
+    'default' => true,
+  ),
+  'parent_id' => 
+  array (
+    'usage' => 'query_only',
+  ),
+  'parent_type' => 
+  array (
+    'usage' => 'query_only',
+  ),
+  'filename' => 
+  array (
+    'usage' => 'query_only',
+    'force_exists' => true,
+  ),
+);

@@ -1,0 +1,21 @@
+<?php 
+ //WARNING: The contents of this file are auto-generated
+
+
+//THIS FILE IS AUTO GENERATED, DO NOT MODIFY
+$mod_strings['LBL_ACCOUNTS_TMS_HABEASDATA_1_FROM_ACCOUNTS_TITLE'] = 'Pacientes';
+
+
+//THIS FILE IS AUTO GENERATED, DO NOT MODIFY
+$mod_strings['LBL_ACCOUNTS_TMS_HABEASDATA_1_FROM_ACCOUNTS_TITLE'] = 'Pacientes';
+$mod_strings['LBL_TMS_HABEASDATA_TMS_HABEASDATA_1_FROM_TMS_HABEASDATA_L_TITLE'] = 'Reclamación y Consulta Habeas';
+$mod_strings['LBL_TMS_HABEASDATA_TMS_HABEASDATA_1_FROM_TMS_HABEASDATA_R_TITLE'] = 'Reclamación y Consulta Habeas';
+$mod_strings['LBL_TMS_HABEASDATA_DOCUMENTS_1_FROM_DOCUMENTS_TITLE'] = 'Documentos';
+
+
+//THIS FILE IS AUTO GENERATED, DO NOT MODIFY
+$mod_strings['LBL_ACCOUNTS_TMS_HABEASDATA_1_FROM_ACCOUNTS_TITLE'] = 'Pacientes';
+$mod_strings['LBL_TMS_HABEASDATA_TMS_HABEASDATA_1_FROM_TMS_HABEASDATA_L_TITLE'] = 'Reclamación y Consulta Habeas';
+$mod_strings['LBL_TMS_HABEASDATA_TMS_HABEASDATA_1_FROM_TMS_HABEASDATA_R_TITLE'] = 'Reclamación y Consulta Habeas';
+
+?>

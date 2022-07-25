@@ -1,0 +1,120 @@
+<?php
+$module_name = 'gbiA4_Anexo4';
+$searchdefs [$module_name] = 
+array (
+  'layout' => 
+  array (
+    'basic_search' => 
+    array (
+      'name' => 
+      array (
+        'name' => 'name',
+        'default' => true,
+        'width' => '10%',
+      ),
+      'gbian_anexo2_gbia4_anexo4_1_name' => 
+      array (
+        'type' => 'relate',
+        'link' => true,
+        'label' => 'LBL_GBIAN_ANEXO2_GBIA4_ANEXO4_1_FROM_GBIAN_ANEXO2_TITLE',
+        'id' => 'GBIAN_ANEXO2_GBIA4_ANEXO4_1GBIAN_ANEXO2_IDA',
+        'width' => '10%',
+        'default' => true,
+        'name' => 'gbian_anexo2_gbia4_anexo4_1_name',
+      ),
+      'gbia4_anexo4_gbia3_anexo3_name' => 
+      array (
+        'type' => 'relate',
+        'link' => true,
+        'label' => 'LBL_GBIA4_ANEXO4_GBIA3_ANEXO3_FROM_GBIA3_ANEXO3_TITLE',
+        'id' => 'GBIA4_ANEXO4_GBIA3_ANEXO3GBIA3_ANEXO3_IDA',
+        'width' => '10%',
+        'default' => true,
+        'name' => 'gbia4_anexo4_gbia3_anexo3_name',
+      ),
+    ),
+    'advanced_search' => 
+    array (
+      'name' => 
+      array (
+        'name' => 'name',
+        'default' => true,
+        'width' => '10%',
+      ),
+      'gbian_anexo2_gbia4_anexo4_1_name' => 
+      array (
+        'type' => 'relate',
+        'link' => true,
+        'label' => 'LBL_GBIAN_ANEXO2_GBIA4_ANEXO4_1_FROM_GBIAN_ANEXO2_TITLE',
+        'width' => '10%',
+        'default' => true,
+        'id' => 'GBIAN_ANEXO2_GBIA4_ANEXO4_1GBIAN_ANEXO2_IDA',
+        'name' => 'gbian_anexo2_gbia4_anexo4_1_name',
+      ),
+      'gbia4_anexo4_gbia3_anexo3_name' => 
+      array (
+        'type' => 'relate',
+        'link' => true,
+        'label' => 'LBL_GBIA4_ANEXO4_GBIA3_ANEXO3_FROM_GBIA3_ANEXO3_TITLE',
+        'width' => '10%',
+        'default' => true,
+        'id' => 'GBIA4_ANEXO4_GBIA3_ANEXO3GBIA3_ANEXO3_IDA',
+        'name' => 'gbia4_anexo4_gbia3_anexo3_name',
+      ),
+      'prestador_servicio' => 
+      array (
+        'type' => 'relate',
+        'studio' => 'visible',
+        'label' => 'LBL_PRESTADOR_SERVICIO',
+        'id' => 'IPS_IPS_ID_C',
+        'link' => true,
+        'width' => '10%',
+        'default' => true,
+        'name' => 'prestador_servicio',
+      ),
+      'nombquienautoriza_c' => 
+      array (
+        'type' => 'varchar',
+        'default' => true,
+        'label' => 'LBL_NOMBQUIENAUTORIZA',
+        'width' => '10%',
+        'name' => 'nombquienautoriza_c',
+      ),
+      'date_entered' => 
+      array (
+        'type' => 'datetime',
+        'label' => 'LBL_DATE_ENTERED',
+        'width' => '10%',
+        'default' => true,
+        'name' => 'date_entered',
+      ),
+      'fecha_recibida_c' => 
+      array (
+        'type' => 'datetimecombo',
+        'default' => true,
+        'label' => 'LBL_FECHA_RECIBIDA',
+        'width' => '10%',
+        'name' => 'fecha_recibida_c',
+      ),
+      'created_by' => 
+      array (
+        'type' => 'assigned_user_name',
+        'label' => 'LBL_CREATED',
+        'width' => '10%',
+        'default' => true,
+        'name' => 'created_by',
+      ),
+    ),
+  ),
+  'templateMeta' => 
+  array (
+    'maxColumns' => '3',
+    'maxColumnsBasic' => '4',
+    'widths' => 
+    array (
+      'label' => '10',
+      'field' => '30',
+    ),
+  ),
+);
+?>

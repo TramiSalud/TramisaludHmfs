@@ -1,0 +1,102 @@
+<?php
+// created: 2014-04-08 13:36:02
+$subpanel_layout['list_fields'] = array (
+  'name' => 
+  array (
+    'vname' => 'LBL_NAME',
+    'widget_class' => 'SubPanelDetailViewLink',
+    'width' => '5%',
+    'default' => true,
+  ),
+  'eps' => 
+  array (
+    'type' => 'relate',
+    'studio' => 'visible',
+    'vname' => 'LBL_EPS',
+    'id' => 'EPS_EPS_ID_C',
+    'link' => true,
+    'width' => '10%',
+    'default' => true,
+    'widget_class' => 'SubPanelDetailViewLink',
+    'target_module' => 'EPS_EPS',
+    'target_record_key' => 'eps_eps_id_c',
+  ),
+  'paciente' => 
+  array (
+    'type' => 'relate',
+    'studio' => 'visible',
+    'vname' => 'LBL_PACIENTE',
+    'id' => 'ACCOUNT_ID_C',
+    'link' => true,
+    'width' => '10%',
+    'default' => true,
+    'widget_class' => 'SubPanelDetailViewLink',
+    'target_module' => 'Accounts',
+    'target_record_key' => 'account_id_c',
+  ),
+  'tipodoc' => 
+  array (
+    'type' => 'enum',
+    'studio' => 'visible',
+    'default' => true,
+    'vname' => 'LBL_TIPODOC',
+    'width' => '10%',
+  ),
+  'nrodoc' => 
+  array (
+    'type' => 'varchar',
+    'vname' => 'LBL_NRODOC',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'autorizacionnro' => 
+  array (
+    'type' => 'varchar',
+    'vname' => 'LBL_AUTORIZACIONNRO',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'fechaingreso' => 
+  array (
+    'type' => 'date',
+    'vname' => 'LBL_FECHAINGRESO',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'assigned_user_name' => 
+  array (
+    'link' => true,
+    'type' => 'relate',
+    'studio' => 'visible',
+    'vname' => 'LBL_ASSIGNED_TO_NAME',
+    'id' => 'ASSIGNED_USER_ID',
+    'width' => '10%',
+    'default' => true,
+    'widget_class' => 'SubPanelDetailViewLink',
+    'target_module' => '',
+    'target_record_key' => 'assigned_user_id',
+  ),
+  'quienautoriza_c' => 
+  array (
+    'type' => 'varchar',
+    'default' => true,
+    'vname' => 'LBL_QUIENAUTORIZA',
+    'width' => '10%',
+  ),
+  'edit_button' => 
+  array (
+    'vname' => 'LBL_EDIT_BUTTON',
+    'widget_class' => 'SubPanelEditButton',
+    'module' => 'AUT_AutorizacionesTelefonicas',
+    'width' => '4%',
+    'default' => true,
+  ),
+  'remove_button' => 
+  array (
+    'vname' => 'LBL_REMOVE',
+    'widget_class' => 'SubPanelRemoveButton',
+    'module' => 'AUT_AutorizacionesTelefonicas',
+    'width' => '5%',
+    'default' => true,
+  ),
+);

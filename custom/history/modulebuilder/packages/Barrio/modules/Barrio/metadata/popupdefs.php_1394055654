@@ -1,0 +1,33 @@
+<?php
+$popupMeta = array (
+    'moduleMain' => 'BAR_Barrio',
+    'varName' => 'BAR_Barrio',
+    'orderBy' => 'bar_barrio.name',
+    'whereClauses' => array (
+  'name' => 'bar_barrio.name',
+),
+    'searchInputs' => array (
+  0 => 'bar_barrio_number',
+  1 => 'name',
+  2 => 'priority',
+  3 => 'status',
+),
+    'listviewdefs' => array (
+  'NAME' => 
+  array (
+    'type' => 'name',
+    'link' => true,
+    'label' => 'LBL_NAME',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'DESCRIPTION' => 
+  array (
+    'type' => 'text',
+    'label' => 'LBL_DESCRIPTION',
+    'sortable' => false,
+    'width' => '10%',
+    'default' => true,
+  ),
+),
+);

@@ -1,0 +1,52 @@
+<?php
+// created: 2014-04-10 16:48:04
+$layout_defs = array (
+  'name' => 
+  array (
+    'type' => 'name',
+    'link' => true,
+    'vname' => 'LBL_NAME',
+    'width' => '10%',
+    'default' => true,
+    'widget_class' => 'SubPanelDetailViewLink',
+    'target_module' => NULL,
+    'target_record_key' => NULL,
+  ),
+  'cantidad' => 
+  array (
+    'type' => 'int',
+    'vname' => 'LBL_CANTIDAD',
+    'width' => '5%',
+    'default' => true,
+  ),
+  'description' => 
+  array (
+    'type' => 'text',
+    'vname' => 'LBL_DESCRIPTION',
+    'sortable' => false,
+    'width' => '70%',
+    'default' => true,
+  ),
+  'date_modified' => 
+  array (
+    'vname' => 'LBL_DATE_MODIFIED',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'edit_button' => 
+  array (
+    'vname' => 'LBL_EDIT_BUTTON',
+    'widget_class' => 'SubPanelEditButton',
+    'module' => 'minpo_Manejo_integra',
+    'width' => '4%',
+    'default' => true,
+  ),
+  'remove_button' => 
+  array (
+    'vname' => 'LBL_REMOVE',
+    'widget_class' => 'SubPanelRemoveButton',
+    'module' => 'minpo_Manejo_integra',
+    'width' => '5%',
+    'default' => true,
+  ),
+);

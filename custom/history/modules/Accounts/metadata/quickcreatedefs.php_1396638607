@@ -1,0 +1,364 @@
+<?php
+$viewdefs ['Accounts'] = 
+array (
+  'QuickCreate' => 
+  array (
+    'templateMeta' => 
+    array (
+      'form' => 
+      array (
+        'buttons' => 
+        array (
+          0 => 'SAVE',
+          1 => 'CANCEL',
+        ),
+      ),
+      'maxColumns' => '2',
+      'widths' => 
+      array (
+        0 => 
+        array (
+          'label' => '10',
+          'field' => '30',
+        ),
+        1 => 
+        array (
+          'label' => '10',
+          'field' => '30',
+        ),
+      ),
+      'includes' => 
+      array (
+        0 => 
+        array (
+          'file' => 'modules/Accounts/Account.js',
+        ),
+      ),
+      'useTabs' => false,
+      'tabDefs' => 
+      array (
+        'LBL_ACCOUNT_INFORMATION' => 
+        array (
+          'newTab' => false,
+          'panelDefault' => 'expanded',
+        ),
+        'LBL_PANEL_ADVANCED' => 
+        array (
+          'newTab' => false,
+          'panelDefault' => 'expanded',
+        ),
+        'LBL_PANEL_ASSIGNMENT' => 
+        array (
+          'newTab' => false,
+          'panelDefault' => 'expanded',
+        ),
+      ),
+    ),
+    'panels' => 
+    array (
+      'lbl_account_information' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            'name' => 'tipo_documento_c',
+            'studio' => 'visible',
+            'label' => 'LBL_TIPO_DOCUMENTO',
+          ),
+          1 => '',
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            'name' => 'name',
+            'displayParams' => 
+            array (
+              'required' => true,
+            ),
+          ),
+          1 => 
+          array (
+            'name' => 'primernombre_c',
+            'label' => 'LBL_PRIMERNOMBRE',
+          ),
+        ),
+        2 => 
+        array (
+          0 => 
+          array (
+            'name' => 'confirmaciondocumento_c',
+            'label' => 'LBL_CONFIRMACIONDOCUMENTO',
+          ),
+          1 => 
+          array (
+            'name' => 'segundonombre_c',
+            'label' => 'LBL_SEGUNDONOMBRE',
+          ),
+        ),
+        3 => 
+        array (
+          0 => 
+          array (
+            'name' => 'telefonopersonal_c',
+            'label' => 'LBL_TELEFONOPERSONAL',
+          ),
+          1 => 
+          array (
+            'name' => 'primerapellido_c',
+            'label' => 'LBL_PRIMERAPELLIDO',
+          ),
+        ),
+        4 => 
+        array (
+          0 => 
+          array (
+            'name' => 'telefonoadicional_c',
+            'label' => 'LBL_TELEFONOADICIONAL',
+          ),
+          1 => 
+          array (
+            'name' => 'segundoapellido_c',
+            'label' => 'LBL_SEGUNDOAPELLIDO',
+          ),
+        ),
+        5 => 
+        array (
+          0 => 
+          array (
+            'name' => 'celular_c',
+            'label' => 'LBL_CELULAR',
+          ),
+        ),
+        6 => 
+        array (
+          0 => 
+          array (
+            'name' => 'email1',
+          ),
+        ),
+        7 => 
+        array (
+          0 => 
+          array (
+            'name' => 'direccionresidencia_c',
+            'studio' => 'visible',
+            'label' => 'LBL_DIRECCIONRESIDENCIA',
+          ),
+          1 => 
+          array (
+            'name' => 'lugartrabajo_c',
+            'label' => 'LBL_LUGARTRABAJO',
+          ),
+        ),
+        8 => 
+        array (
+          0 => 
+          array (
+            'name' => 'barrio_c',
+            'studio' => 'visible',
+            'label' => 'LBL_BARRIO',
+          ),
+          1 => 
+          array (
+            'name' => 'cargoempresa_c',
+            'label' => 'LBL_CARGOEMPRESA',
+          ),
+        ),
+        9 => 
+        array (
+          0 => 
+          array (
+            'name' => 'vereda_c',
+            'label' => 'LBL_VEREDA',
+          ),
+          1 => 
+          array (
+            'name' => 'telefonoempresa_c',
+            'label' => 'LBL_TELEFONOEMPRESA',
+          ),
+        ),
+        10 => 
+        array (
+          0 => 
+          array (
+            'name' => 'pais_c',
+            'studio' => 'visible',
+            'label' => 'LBL_PAIS',
+          ),
+          1 => 
+          array (
+            'name' => 'extensionempresa_c',
+            'label' => 'LBL_EXTENSIONEMPRESA',
+          ),
+        ),
+        11 => 
+        array (
+          0 => 
+          array (
+            'name' => 'departamento_c',
+            'studio' => 'visible',
+            'label' => 'LBL_DEPARTAMENTO',
+          ),
+          1 => 
+          array (
+            'name' => 'acudiente_c',
+            'studio' => 'visible',
+            'label' => 'LBL_ACUDIENTE',
+          ),
+        ),
+        12 => 
+        array (
+          0 => 
+          array (
+            'name' => 'municipio_c',
+            'studio' => 'visible',
+            'label' => 'LBL_MUNICIPIO',
+          ),
+          1 => 
+          array (
+            'name' => 'assigned_user_name',
+          ),
+        ),
+      ),
+      'LBL_PANEL_ADVANCED' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            'name' => 'tipocobertura_c',
+            'studio' => 'visible',
+            'label' => 'LBL_TIPOCOBERTURA',
+          ),
+          1 => '',
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            'name' => 'epsactual_c',
+            'studio' => 'visible',
+            'label' => 'LBL_EPSACTUAL',
+          ),
+          1 => '',
+        ),
+        2 => 
+        array (
+          0 => 
+          array (
+            'name' => 'ipsactual_c',
+            'studio' => 'visible',
+            'label' => 'LBL_IPSACTUAL',
+          ),
+          1 => '',
+        ),
+      ),
+      'LBL_PANEL_ASSIGNMENT' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            'name' => 'fechanacimiento_c',
+            'label' => 'LBL_FECHANACIMIENTO',
+          ),
+          1 => 
+          array (
+            'name' => 'estadocivil_c',
+            'studio' => 'visible',
+            'label' => 'LBL_ESTADOCIVIL',
+          ),
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            'name' => 'leydata_c',
+            'label' => 'LBL_LEYDATA',
+          ),
+          1 => 
+          array (
+            'name' => 'genero_c',
+            'studio' => 'visible',
+            'label' => 'LBL_GENERO',
+          ),
+        ),
+        2 => 
+        array (
+          0 => 
+          array (
+            'name' => 'numeroformulario_c',
+            'label' => 'LBL_NUMEROFORMULARIO',
+          ),
+          1 => 
+          array (
+            'name' => 'numerohijos_c',
+            'label' => 'LBL_NUMEROHIJOS',
+          ),
+        ),
+        3 => 
+        array (
+          0 => 
+          array (
+            'name' => 'clasificacionmercadeo_c',
+            'studio' => 'visible',
+            'label' => 'LBL_CLASIFICACIONMERCADEO',
+          ),
+          1 => 
+          array (
+            'name' => 'estratoeconomico_c',
+            'studio' => 'visible',
+            'label' => 'LBL_ESTRATOECONOMICO',
+          ),
+        ),
+        4 => 
+        array (
+          0 => 
+          array (
+            'name' => 'observacionesmercadeo_c',
+            'studio' => 'visible',
+            'label' => 'LBL_OBSERVACIONESMERCADEO',
+          ),
+          1 => 
+          array (
+            'name' => 'beneficios_c',
+            'studio' => 'visible',
+            'label' => 'LBL_BENEFICIOS',
+          ),
+        ),
+        5 => 
+        array (
+          0 => 
+          array (
+            'name' => 'origen_c',
+            'studio' => 'visible',
+            'label' => 'LBL_ORIGEN',
+          ),
+          1 => 
+          array (
+            'name' => 'actividadeconomica_c',
+            'studio' => 'visible',
+            'label' => 'LBL_ACTIVIDADECONOMICA',
+          ),
+        ),
+        6 => 
+        array (
+          0 => 
+          array (
+            'name' => 'jornadacitas_c',
+            'studio' => 'visible',
+            'label' => 'LBL_JORNADACITAS',
+          ),
+          1 => 
+          array (
+            'name' => 'actividadindependiente_c',
+            'label' => 'LBL_ACTIVIDADINDEPENDIENTE',
+          ),
+        ),
+      ),
+    ),
+  ),
+);
+?>

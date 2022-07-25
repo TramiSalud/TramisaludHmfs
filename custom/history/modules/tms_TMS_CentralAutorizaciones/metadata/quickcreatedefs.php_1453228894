@@ -1,0 +1,108 @@
+<?php
+$module_name = 'tms_TMS_CentralAutorizaciones';
+$viewdefs [$module_name] = 
+array (
+  'QuickCreate' => 
+  array (
+    'templateMeta' => 
+    array (
+      'maxColumns' => '2',
+      'widths' => 
+      array (
+        0 => 
+        array (
+          'label' => '10',
+          'field' => '30',
+        ),
+        1 => 
+        array (
+          'label' => '10',
+          'field' => '30',
+        ),
+      ),
+      'useTabs' => false,
+      'tabDefs' => 
+      array (
+        'DEFAULT' => 
+        array (
+          'newTab' => false,
+          'panelDefault' => 'expanded',
+        ),
+      ),
+    ),
+    'panels' => 
+    array (
+      'default' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            'name' => 'name',
+            'label' => 'LBL_NAME',
+            'type' => 'readonly',
+          ),
+          1 => 
+          array (
+            'name' => 'estado',
+            'studio' => 'visible',
+            'label' => 'LBL_ESTADO',
+          ),
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            'name' => 'fecha_de_vencimiento',
+            'label' => 'LBL_FECHA_DE_VENCIMIENTO',
+          ),
+        ),
+        2 => 
+        array (
+          0 => 
+          array (
+            'name' => 'tipo_de_tarea',
+            'studio' => 'visible',
+            'label' => 'LBL_TIPO_DE_TAREA',
+          ),
+        ),
+        3 => 
+        array (
+          0 => 
+          array (
+            'name' => 'pagadores_responsables_c',
+            'label' => 'LBL_PAGADORES_RESPONSABLES',
+          ),
+        ),
+        4 => 
+        array (
+          0 => 
+          array (
+            'name' => 'cups_solicitados_c',
+            'label' => 'LBL_CUPS_SOLICITADOS ',
+          ),
+        ),
+        5 => 
+        array (
+          0 => 
+          array (
+            'name' => 'description',
+            'comment' => 'Full text of the note',
+            'studio' => 'visible',
+            'label' => 'LBL_DESCRIPTION',
+          ),
+        ),
+        6 => 
+        array (
+          0 => 
+          array (
+            'name' => 'asignar_a_c',
+            'studio' => 'visible',
+            'label' => 'LBL_ASIGNAR_A',
+          ),
+        ),
+      ),
+    ),
+  ),
+);
+?>

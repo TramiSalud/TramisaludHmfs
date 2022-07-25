@@ -1,0 +1,80 @@
+<?php
+$dashletData['gbi_Anexo9Dashlet']['searchFields'] = array (
+  'date_entered' => 
+  array (
+    'default' => '',
+  ),
+  'date_modified' => 
+  array (
+    'default' => '',
+  ),
+  'assigned_user_id' => 
+  array (
+    'type' => 'assigned_user_name',
+    'default' => 'Administrator',
+  ),
+);
+$dashletData['gbi_Anexo9Dashlet']['columns'] = array (
+  'name' => 
+  array (
+    'width' => '40%',
+    'label' => 'LBL_LIST_NAME',
+    'link' => true,
+    'default' => true,
+    'name' => 'name',
+  ),
+  'estado' => 
+  array (
+    'type' => 'enum',
+    'studio' => 'visible',
+    'label' => 'LBL_ESTADO',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'eps' => 
+  array (
+    'type' => 'relate',
+    'studio' => 'visible',
+    'label' => 'LBL_EPS',
+    'id' => 'EPS_EPS_ID_C',
+    'link' => true,
+    'width' => '10%',
+    'default' => true,
+  ),
+  'prestador' => 
+  array (
+    'type' => 'relate',
+    'studio' => 'visible',
+    'label' => 'LBL_PRESTADOR',
+    'id' => 'IPS_IPS_ID_C',
+    'link' => true,
+    'width' => '10%',
+    'default' => true,
+  ),
+  'especialista' => 
+  array (
+    'type' => 'relate',
+    'studio' => 'visible',
+    'label' => 'LBL_ESPECIALISTA',
+    'id' => 'ESP_ESPECIALISTA_ID_C',
+    'link' => true,
+    'width' => '10%',
+    'default' => true,
+  ),
+  'date_entered' => 
+  array (
+    'width' => '15%',
+    'label' => 'LBL_DATE_ENTERED',
+    'default' => true,
+    'name' => 'date_entered',
+  ),
+  'created_by_name' => 
+  array (
+    'type' => 'relate',
+    'link' => true,
+    'label' => 'LBL_CREATED',
+    'id' => 'CREATED_BY',
+    'width' => '10%',
+    'default' => true,
+  ),
+);

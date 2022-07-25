@@ -1,0 +1,86 @@
+<?php
+$popupMeta = array (
+    'moduleMain' => 'AUT_AutorizacionesTelefonicas',
+    'varName' => 'AUT_AutorizacionesTelefonicas',
+    'orderBy' => 'aut_autorizacionestelefonicas.name',
+    'whereClauses' => array (
+  'name' => 'aut_autorizacionestelefonicas.name',
+),
+    'searchInputs' => array (
+  0 => 'aut_autorizacionestelefonicas_number',
+  1 => 'name',
+  2 => 'priority',
+  3 => 'status',
+),
+    'listviewdefs' => array (
+  'NAME' => 
+  array (
+    'type' => 'name',
+    'link' => true,
+    'label' => 'LBL_NAME',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'EPS' => 
+  array (
+    'type' => 'relate',
+    'studio' => 'visible',
+    'label' => 'LBL_EPS',
+    'id' => 'EPS_EPS_ID_C',
+    'link' => true,
+    'width' => '10%',
+    'default' => true,
+  ),
+  'PACIENTE' => 
+  array (
+    'type' => 'relate',
+    'studio' => 'visible',
+    'label' => 'LBL_PACIENTE',
+    'id' => 'ACCOUNT_ID_C',
+    'link' => true,
+    'width' => '10%',
+    'default' => true,
+  ),
+  'NRODOC' => 
+  array (
+    'type' => 'varchar',
+    'label' => 'LBL_NRODOC',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'AUTORIZACIONNRO' => 
+  array (
+    'type' => 'varchar',
+    'label' => 'LBL_AUTORIZACIONNRO',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'AUTORIZA' => 
+  array (
+    'type' => 'relate',
+    'studio' => 'visible',
+    'label' => 'LBL_AUTORIZA',
+    'id' => 'ESP_ESPECIALISTA_ID_C',
+    'link' => true,
+    'width' => '10%',
+    'default' => true,
+  ),
+  'ASSIGNED_USER_NAME' => 
+  array (
+    'link' => true,
+    'type' => 'relate',
+    'studio' => 'visible',
+    'label' => 'LBL_ASSIGNED_TO_NAME',
+    'id' => 'ASSIGNED_USER_ID',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'FECHAINGRESO' => 
+  array (
+    'type' => 'date',
+    'label' => 'LBL_FECHAINGRESO',
+    'width' => '10%',
+    'default' => true,
+  ),
+),
+);

@@ -1,0 +1,42 @@
+<?php
+// created: 2014-04-11 10:47:48
+$layout_defs = array (
+  'cantidad' => 
+  array (
+    'type' => 'int',
+    'vname' => 'LBL_CANTIDAD',
+    'width' => '5%',
+    'default' => true,
+  ),
+  'descripcion_c' => 
+  array (
+    'type' => 'text',
+    'default' => true,
+    'studio' => 'visible',
+    'vname' => 'LBL_DESCRIPCION_C',
+    'sortable' => false,
+    'width' => '10%',
+  ),
+  'date_modified' => 
+  array (
+    'vname' => 'LBL_DATE_MODIFIED',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'edit_button' => 
+  array (
+    'vname' => 'LBL_EDIT_BUTTON',
+    'widget_class' => 'SubPanelEditButton',
+    'module' => 'minpo_Manejo_integra',
+    'width' => '4%',
+    'default' => true,
+  ),
+  'remove_button' => 
+  array (
+    'vname' => 'LBL_REMOVE',
+    'widget_class' => 'SubPanelRemoveButton',
+    'module' => 'minpo_Manejo_integra',
+    'width' => '5%',
+    'default' => true,
+  ),
+);

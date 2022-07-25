@@ -1,0 +1,172 @@
+<?php
+$popupMeta = array (
+    'moduleMain' => 'GBIA3_ANEXO3',
+    'varName' => 'GBIA3_ANEXO3',
+    'orderBy' => 'gbia3_anexo3.name',
+    'whereClauses' => array (
+  'name' => 'gbia3_anexo3.name',
+  'paciente' => 'gbia3_anexo3.paciente',
+  'prestador' => 'gbia3_anexo3.prestador',
+  'eps' => 'gbia3_anexo3.eps',
+  'prioridadatencion' => 'gbia3_anexo3.prioridadatencion',
+  'origenatencion' => 'gbia3_anexo3.origenatencion',
+  'ubicacion' => 'gbia3_anexo3.ubicacion',
+  'nombresolicitante' => 'gbia3_anexo3.nombresolicitante',
+  'created_by_name' => 'gbia3_anexo3.created_by_name',
+  'estado_c' => 'gbia3_anexo3_cstm.estado_c',
+),
+    'searchInputs' => array (
+  1 => 'name',
+  4 => 'paciente',
+  5 => 'prestador',
+  6 => 'eps',
+  7 => 'prioridadatencion',
+  8 => 'origenatencion',
+  9 => 'ubicacion',
+  10 => 'nombresolicitante',
+  11 => 'created_by_name',
+  12 => 'estado_c',
+),
+    'searchdefs' => array (
+  'name' => 
+  array (
+    'type' => 'name',
+    'link' => true,
+    'label' => 'LBL_NAME',
+    'width' => '10%',
+    'name' => 'name',
+  ),
+  'estado_c' => 
+  array (
+    'type' => 'enum',
+    'studio' => 'visible',
+    'label' => 'LBL_ESTADO',
+    'width' => '10%',
+    'name' => 'estado_c',
+  ),
+  'paciente' => 
+  array (
+    'type' => 'relate',
+    'studio' => 'visible',
+    'label' => 'LBL_PACIENTE',
+    'id' => 'ACCOUNT_ID_C',
+    'link' => true,
+    'width' => '10%',
+    'name' => 'paciente',
+  ),
+  'prestador' => 
+  array (
+    'type' => 'relate',
+    'studio' => 'visible',
+    'label' => 'LBL_PRESTADOR',
+    'id' => 'IPS_IPS_ID_C',
+    'link' => true,
+    'width' => '10%',
+    'name' => 'prestador',
+  ),
+  'eps' => 
+  array (
+    'type' => 'relate',
+    'studio' => 'visible',
+    'label' => 'LBL_EPS',
+    'id' => 'EPS_EPS_ID_C',
+    'link' => true,
+    'width' => '10%',
+    'name' => 'eps',
+  ),
+  'prioridadatencion' => 
+  array (
+    'type' => 'enum',
+    'studio' => 'visible',
+    'label' => 'LBL_PRIORIDADATENCION',
+    'width' => '10%',
+    'name' => 'prioridadatencion',
+  ),
+  'origenatencion' => 
+  array (
+    'type' => 'enum',
+    'studio' => 'visible',
+    'label' => 'LBL_ORIGENATENCION',
+    'width' => '10%',
+    'name' => 'origenatencion',
+  ),
+  'ubicacion' => 
+  array (
+    'type' => 'enum',
+    'studio' => 'visible',
+    'label' => 'LBL_UBICACION',
+    'width' => '10%',
+    'name' => 'ubicacion',
+  ),
+  'nombresolicitante' => 
+  array (
+    'type' => 'varchar',
+    'label' => 'LBL_NOMBRESOLICITANTE',
+    'width' => '10%',
+    'name' => 'nombresolicitante',
+  ),
+  'created_by_name' => 
+  array (
+    'type' => 'relate',
+    'link' => true,
+    'label' => 'LBL_CREATED',
+    'id' => 'CREATED_BY',
+    'width' => '10%',
+    'name' => 'created_by_name',
+  ),
+),
+    'listviewdefs' => array (
+  'NAME' => 
+  array (
+    'type' => 'name',
+    'link' => true,
+    'label' => 'LBL_NAME',
+    'width' => '10%',
+    'default' => true,
+    'name' => 'name',
+  ),
+  'PACIENTE' => 
+  array (
+    'type' => 'relate',
+    'studio' => 'visible',
+    'label' => 'LBL_PACIENTE',
+    'id' => 'ACCOUNT_ID_C',
+    'link' => true,
+    'width' => '10%',
+    'default' => true,
+    'name' => 'paciente',
+  ),
+  'PRESTADOR' => 
+  array (
+    'type' => 'relate',
+    'studio' => 'visible',
+    'label' => 'LBL_PRESTADOR',
+    'id' => 'IPS_IPS_ID_C',
+    'link' => true,
+    'width' => '10%',
+    'default' => true,
+    'name' => 'prestador',
+  ),
+  'EPS' => 
+  array (
+    'type' => 'relate',
+    'studio' => 'visible',
+    'label' => 'LBL_EPS',
+    'id' => 'EPS_EPS_ID_C',
+    'link' => true,
+    'width' => '10%',
+    'default' => true,
+    'name' => 'eps',
+  ),
+  'CREATED_BY_NAME' => 
+  array (
+    'type' => 'relate',
+    'link' => true,
+    'label' => 'LBL_CREATED',
+    'id' => 'CREATED_BY',
+    'width' => '10%',
+    'default' => true,
+    'name' => 'created_by_name',
+  ),
+),
+);

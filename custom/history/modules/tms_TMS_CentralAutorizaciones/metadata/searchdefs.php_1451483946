@@ -1,0 +1,83 @@
+<?php
+$module_name = 'tms_TMS_CentralAutorizaciones';
+$searchdefs [$module_name] = 
+array (
+  'layout' => 
+  array (
+    'basic_search' => 
+    array (
+      'tipo_de_tarea' => 
+      array (
+        'type' => 'enum',
+        'default' => true,
+        'studio' => 'visible',
+        'label' => 'LBL_TIPO_DE_TAREA',
+        'width' => '10%',
+        'name' => 'tipo_de_tarea',
+      ),
+      'estado' => 
+      array (
+        'type' => 'enum',
+        'default' => true,
+        'studio' => 'visible',
+        'label' => 'LBL_ESTADO',
+        'width' => '10%',
+        'name' => 'estado',
+      ),
+      'date_entered' => 
+      array (
+        'type' => 'datetime',
+        'label' => 'LBL_DATE_ENTERED',
+        'width' => '10%',
+        'default' => true,
+        'name' => 'date_entered',
+      ),
+      'fecha_de_vencimiento' => 
+      array (
+        'type' => 'date',
+        'label' => 'LBL_FECHA_DE_VENCIMIENTO',
+        'width' => '10%',
+        'default' => true,
+        'name' => 'fecha_de_vencimiento',
+      ),
+      'asignar_a_c' => 
+      array (
+        'type' => 'enum',
+        'default' => true,
+        'studio' => 'visible',
+        'label' => 'LBL_ASIGNAR_A',
+        'width' => '10%',
+        'name' => 'asignar_a_c',
+      ),
+    ),
+    'advanced_search' => 
+    array (
+      0 => 'name',
+      1 => 
+      array (
+        'name' => 'assigned_user_id',
+        'label' => 'LBL_ASSIGNED_TO',
+        'type' => 'enum',
+        'function' => 
+        array (
+          'name' => 'get_user_array',
+          'params' => 
+          array (
+            0 => false,
+          ),
+        ),
+      ),
+    ),
+  ),
+  'templateMeta' => 
+  array (
+    'maxColumns' => '3',
+    'maxColumnsBasic' => '4',
+    'widths' => 
+    array (
+      'label' => '10',
+      'field' => '30',
+    ),
+  ),
+);
+?>

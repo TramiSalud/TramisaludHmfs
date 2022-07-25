@@ -1,0 +1,140 @@
+<?php
+$viewdefs ['Tasks'] = 
+array (
+  'EditView' => 
+  array (
+    'templateMeta' => 
+    array (
+      'form' => 
+      array (
+        'hidden' => 
+        array (
+          0 => '<input type="hidden" name="isSaveAndNew" value="false">',
+        ),
+        'buttons' => 
+        array (
+          0 => 'SAVE',
+          1 => 'CANCEL',
+          2 => 
+          array (
+            'customCode' => '{if $fields.status.value != "Close"}<input title="{$APP.LBL_CLOSE_AND_CREATE_BUTTON_TITLE}" class="button" onclick="document.getElementById(\'status\').value=\'Close\'; this.form.action.value=\'Save\'; this.form.return_module.value=\'Tasks\'; this.form.isDuplicate.value=true; this.form.isSaveAndNew.value=true; this.form.return_action.value=\'EditView\'; this.form.return_id.value=\'{$fields.id.value}\'; if(check_form(\'EditView\'))SUGAR.ajaxUI.submitForm(this.form);" type="button" name="button" value="{$APP.LBL_CLOSE_AND_CREATE_BUTTON_LABEL}">{/if}',
+          ),
+        ),
+      ),
+      'maxColumns' => '2',
+      'widths' => 
+      array (
+        0 => 
+        array (
+          'label' => '10',
+          'field' => '30',
+        ),
+        1 => 
+        array (
+          'label' => '10',
+          'field' => '30',
+        ),
+      ),
+      'useTabs' => false,
+      'tabDefs' => 
+      array (
+        'LBL_TASK_INFORMATION' => 
+        array (
+          'newTab' => false,
+          'panelDefault' => 'expanded',
+        ),
+        'LBL_EDITVIEW_PANEL1' => 
+        array (
+          'newTab' => false,
+          'panelDefault' => 'expanded',
+        ),
+        'LBL_PANEL_ASSIGNMENT' => 
+        array (
+          'newTab' => false,
+          'panelDefault' => 'expanded',
+        ),
+      ),
+      'syncDetailEditViews' => false,
+    ),
+    'panels' => 
+    array (
+      'lbl_task_information' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            'name' => 'name',
+            'label' => 'LBL_NAME',
+          ),
+          1 => '',
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            'name' => 'tipo_de_tarea_c',
+            'studio' => 'visible',
+            'label' => 'LBL_TIPO_DE_TAREA',
+          ),
+          1 => 
+          array (
+            'name' => 'status',
+            'displayParams' => 
+            array (
+              'required' => true,
+            ),
+          ),
+        ),
+        2 => 
+        array (
+          0 => 
+          array (
+            'name' => 'date_entered',
+            'comment' => 'Date record created',
+            'label' => 'LBL_DATE_ENTERED',
+          ),
+          1 => 
+          array (
+            'name' => 'date_due',
+            'type' => 'datetimecombo',
+            'displayParams' => 
+            array (
+              'showNoneCheckbox' => true,
+              'showFormats' => true,
+            ),
+          ),
+        ),
+        3 => 
+        array (
+          0 => 
+          array (
+            'name' => 'date_modified',
+            'comment' => 'Date record last modified',
+            'label' => 'LBL_DATE_MODIFIED',
+          ),
+          1 => '',
+        ),
+      ),
+      'lbl_editview_panel1' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            'name' => 'description',
+          ),
+        ),
+      ),
+      'LBL_PANEL_ASSIGNMENT' => 
+      array (
+        0 => 
+        array (
+          0 => 'assigned_user_name',
+          1 => '',
+        ),
+      ),
+    ),
+  ),
+);
+?>

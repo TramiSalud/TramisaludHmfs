@@ -1,0 +1,109 @@
+<?php
+$dashletData['gbi_Anexo9Dashlet']['searchFields'] = array (
+  'name' => 
+  array (
+    'default' => '',
+  ),
+  'estado' => 
+  array (
+    'default' => '',
+  ),
+  'prestador' => 
+  array (
+    'default' => '',
+  ),
+  'eps' => 
+  array (
+    'default' => '',
+  ),
+  'especialista' => 
+  array (
+    'default' => '',
+  ),
+  'date_entered' => 
+  array (
+    'default' => '',
+  ),
+  'created_by_name' => 
+  array (
+    'default' => '',
+  ),
+);
+$dashletData['gbi_Anexo9Dashlet']['columns'] = array (
+  'name' => 
+  array (
+    'width' => '40%',
+    'label' => 'LBL_LIST_NAME',
+    'link' => true,
+    'default' => true,
+    'name' => 'name',
+  ),
+  'estado' => 
+  array (
+    'type' => 'enum',
+    'studio' => 'visible',
+    'label' => 'LBL_ESTADO',
+    'width' => '10%',
+    'default' => true,
+    'name' => 'estado',
+  ),
+  'accounts_gbi_anexo9_1_name' => 
+  array (
+    'type' => 'relate',
+    'link' => true,
+    'label' => 'LBL_ACCOUNTS_GBI_ANEXO9_1_FROM_ACCOUNTS_TITLE',
+    'id' => 'ACCOUNTS_GBI_ANEXO9_1ACCOUNTS_IDA',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'eps' => 
+  array (
+    'type' => 'relate',
+    'studio' => 'visible',
+    'label' => 'LBL_EPS',
+    'id' => 'EPS_EPS_ID_C',
+    'link' => true,
+    'width' => '10%',
+    'default' => true,
+    'name' => 'eps',
+  ),
+  'prestador' => 
+  array (
+    'type' => 'relate',
+    'studio' => 'visible',
+    'label' => 'LBL_PRESTADOR',
+    'id' => 'IPS_IPS_ID_C',
+    'link' => true,
+    'width' => '10%',
+    'default' => true,
+    'name' => 'prestador',
+  ),
+  'especialista' => 
+  array (
+    'type' => 'relate',
+    'studio' => 'visible',
+    'label' => 'LBL_ESPECIALISTA',
+    'id' => 'ESP_ESPECIALISTA_ID_C',
+    'link' => true,
+    'width' => '10%',
+    'default' => true,
+    'name' => 'especialista',
+  ),
+  'date_entered' => 
+  array (
+    'width' => '15%',
+    'label' => 'LBL_DATE_ENTERED',
+    'default' => true,
+    'name' => 'date_entered',
+  ),
+  'created_by_name' => 
+  array (
+    'type' => 'relate',
+    'link' => true,
+    'label' => 'LBL_CREATED',
+    'id' => 'CREATED_BY',
+    'width' => '10%',
+    'default' => true,
+    'name' => 'created_by_name',
+  ),
+);

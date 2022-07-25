@@ -1,0 +1,34 @@
+<?php
+$popupMeta = array (
+    'moduleMain' => 'gbiA4_Anexo4',
+    'varName' => 'gbiA4_Anexo4',
+    'orderBy' => 'gbia4_anexo4.name',
+    'whereClauses' => array (
+  'name' => 'gbia4_anexo4.name',
+),
+    'searchInputs' => array (
+  0 => 'gbia4_anexo4_number',
+  1 => 'name',
+  2 => 'priority',
+  3 => 'status',
+),
+    'listviewdefs' => array (
+  'NAME' => 
+  array (
+    'type' => 'name',
+    'link' => true,
+    'label' => 'LBL_NAME',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'GBIA4_ANEXO4_GBIA3_ANEXO3_NAME' => 
+  array (
+    'type' => 'relate',
+    'link' => true,
+    'label' => 'LBL_GBIA4_ANEXO4_GBIA3_ANEXO3_FROM_GBIA3_ANEXO3_TITLE',
+    'id' => 'GBIA4_ANEXO4_GBIA3_ANEXO3GBIA3_ANEXO3_IDA',
+    'width' => '10%',
+    'default' => true,
+  ),
+),
+);

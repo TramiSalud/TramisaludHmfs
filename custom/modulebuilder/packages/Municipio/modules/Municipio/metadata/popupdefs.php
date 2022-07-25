@@ -1,0 +1,72 @@
+<?php
+$popupMeta = array (
+    'moduleMain' => 'MUN_Municipio',
+    'varName' => 'MUN_Municipio',
+    'orderBy' => 'mun_municipio.name',
+    'whereClauses' => array (
+  'name' => 'mun_municipio.name',
+  'codigodane' => 'mun_municipio.codigodane',
+  'departamento' => 'mun_municipio.departamento',
+),
+    'searchInputs' => array (
+  1 => 'name',
+  4 => 'codigodane',
+  5 => 'departamento',
+),
+    'searchdefs' => array (
+  'codigodane' => 
+  array (
+    'type' => 'varchar',
+    'label' => 'LBL_CODIGODANE',
+    'width' => '10%',
+    'name' => 'codigodane',
+  ),
+  'name' => 
+  array (
+    'type' => 'name',
+    'link' => true,
+    'label' => 'LBL_NAME',
+    'width' => '10%',
+    'name' => 'name',
+  ),
+  'departamento' => 
+  array (
+    'type' => 'relate',
+    'studio' => 'visible',
+    'label' => 'LBL_DEPARTAMENTO',
+    'id' => 'DEP_DEPARTAMENTOS_ID_C',
+    'link' => true,
+    'width' => '10%',
+    'name' => 'departamento',
+  ),
+),
+    'listviewdefs' => array (
+  'CODIGODANE' => 
+  array (
+    'type' => 'varchar',
+    'label' => 'LBL_CODIGODANE',
+    'width' => '10%',
+    'default' => true,
+    'name' => 'codigodane',
+  ),
+  'NAME' => 
+  array (
+    'type' => 'name',
+    'link' => true,
+    'label' => 'LBL_NAME',
+    'width' => '10%',
+    'default' => true,
+    'name' => 'name',
+  ),
+  'DEPARTAMENTO' => 
+  array (
+    'type' => 'relate',
+    'studio' => 'visible',
+    'label' => 'LBL_DEPARTAMENTO',
+    'id' => 'DEP_DEPARTAMENTOS_ID_C',
+    'link' => true,
+    'width' => '10%',
+    'default' => true,
+  ),
+),
+);

@@ -1,0 +1,81 @@
+<?php
+$dashletData['GBIA3_ManejoIntegralDashlet']['searchFields'] = array (
+  'codigocups' => 
+  array (
+    'default' => '',
+  ),
+  'cantidadcups' => 
+  array (
+    'default' => '',
+  ),
+  'gbi_detalle_c' => 
+  array (
+    'default' => '',
+  ),
+);
+$dashletData['GBIA3_ManejoIntegralDashlet']['columns'] = array (
+  'codigocups' => 
+  array (
+    'type' => 'relate',
+    'studio' => 'visible',
+    'label' => 'LBL_CODIGOCUPS',
+    'id' => 'GBICU_CUPS_ID_C',
+    'link' => true,
+    'width' => '10%',
+    'default' => true,
+    'name' => 'codigocups',
+  ),
+  'cantidadcups' => 
+  array (
+    'type' => 'varchar',
+    'label' => 'LBL_CANTIDADCUPS',
+    'width' => '10%',
+    'default' => true,
+    'name' => 'cantidadcups',
+  ),
+  'gbi_detalle_c' => 
+  array (
+    'type' => 'text',
+    'default' => true,
+    'studio' => 'visible',
+    'label' => 'LBL_GBI_DETALLE',
+    'sortable' => false,
+    'width' => '10%',
+  ),
+  'name' => 
+  array (
+    'width' => '40%',
+    'label' => 'LBL_LIST_NAME',
+    'link' => true,
+    'default' => false,
+    'name' => 'name',
+  ),
+  'date_modified' => 
+  array (
+    'width' => '15%',
+    'label' => 'LBL_DATE_MODIFIED',
+    'name' => 'date_modified',
+    'default' => false,
+  ),
+  'date_entered' => 
+  array (
+    'width' => '15%',
+    'label' => 'LBL_DATE_ENTERED',
+    'default' => false,
+    'name' => 'date_entered',
+  ),
+  'created_by' => 
+  array (
+    'width' => '8%',
+    'label' => 'LBL_CREATED',
+    'name' => 'created_by',
+    'default' => false,
+  ),
+  'assigned_user_name' => 
+  array (
+    'width' => '8%',
+    'label' => 'LBL_LIST_ASSIGNED_USER',
+    'name' => 'assigned_user_name',
+    'default' => false,
+  ),
+);

@@ -1,0 +1,6 @@
+function vacios()
+{
+
+	alert ('hp');
+
+}

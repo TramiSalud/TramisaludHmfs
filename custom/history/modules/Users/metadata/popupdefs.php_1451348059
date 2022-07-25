@@ -1,0 +1,19 @@
+<?php
+$popupMeta = array (
+    'moduleMain' => 'User',
+    'varName' => 'USER',
+    'orderBy' => 'user_name',
+    'whereClauses' => array (
+  'is_group' => 'users.is_group',
+),
+    'searchInputs' => array (
+  3 => 'is_group',
+),
+    'searchdefs' => array (
+  'is_group' => 
+  array (
+    'name' => 'is_group',
+    'width' => '10%',
+  ),
+),
+);

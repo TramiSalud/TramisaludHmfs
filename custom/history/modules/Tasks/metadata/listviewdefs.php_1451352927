@@ -1,0 +1,84 @@
+<?php
+$listViewDefs ['Tasks'] = 
+array (
+  'NAME' => 
+  array (
+    'width' => '40%',
+    'label' => 'LBL_LIST_SUBJECT',
+    'link' => true,
+    'default' => true,
+  ),
+  'TIPO_DE_TAREA_C' => 
+  array (
+    'type' => 'enum',
+    'default' => true,
+    'studio' => 'visible',
+    'label' => 'LBL_TIPO_DE_TAREA',
+    'width' => '10%',
+  ),
+  'STATUS' => 
+  array (
+    'width' => '5%',
+    'label' => 'LBL_LIST_STATUS',
+    'link' => false,
+    'default' => true,
+  ),
+  'DATE_ENTERED' => 
+  array (
+    'width' => '10%',
+    'label' => 'LBL_DATE_ENTERED',
+    'default' => true,
+  ),
+  'DATE_DUE' => 
+  array (
+    'width' => '15%',
+    'label' => 'LBL_LIST_DUE_DATE',
+    'link' => false,
+    'default' => true,
+  ),
+  'DATE_MODIFIED' => 
+  array (
+    'type' => 'datetime',
+    'label' => 'LBL_DATE_MODIFIED',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'CREATED_BY_NAME' => 
+  array (
+    'type' => 'relate',
+    'link' => true,
+    'label' => 'LBL_CREATED',
+    'id' => 'CREATED_BY',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'MODIFIED_BY_NAME' => 
+  array (
+    'type' => 'relate',
+    'link' => true,
+    'label' => 'LBL_MODIFIED_NAME',
+    'id' => 'MODIFIED_USER_ID',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'SET_COMPLETE' => 
+  array (
+    'width' => '10%',
+    'label' => 'LBL_LIST_CLOSE',
+    'link' => true,
+    'sortable' => false,
+    'default' => true,
+    'related_fields' => 
+    array (
+      0 => 'status',
+    ),
+  ),
+  'DATE_START' => 
+  array (
+    'width' => '5%',
+    'label' => 'LBL_LIST_START_DATE',
+    'link' => false,
+    'default' => false,
+  ),
+);
+?>

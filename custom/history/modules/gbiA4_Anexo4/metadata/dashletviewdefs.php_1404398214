@@ -1,0 +1,115 @@
+<?php
+$dashletData['gbiA4_Anexo4Dashlet']['searchFields'] = array (
+  'name' => 
+  array (
+    'default' => '',
+  ),
+  'gbian_anexo2_gbia4_anexo4_1_name' => 
+  array (
+    'default' => '',
+  ),
+  'gbia4_anexo4_gbia3_anexo3_name' => 
+  array (
+    'default' => '',
+  ),
+  'prestador_servicio' => 
+  array (
+    'default' => '',
+  ),
+  'nombquienautoriza_c' => 
+  array (
+    'default' => '',
+  ),
+  'date_entered' => 
+  array (
+    'default' => '',
+  ),
+  'created_by_name' => 
+  array (
+    'default' => '',
+  ),
+);
+$dashletData['gbiA4_Anexo4Dashlet']['columns'] = array (
+  'name' => 
+  array (
+    'width' => '40%',
+    'label' => 'LBL_LIST_NAME',
+    'link' => true,
+    'default' => true,
+    'name' => 'name',
+  ),
+  'gbian_anexo2_gbia4_anexo4_1_name' => 
+  array (
+    'type' => 'relate',
+    'link' => true,
+    'label' => 'LBL_GBIAN_ANEXO2_GBIA4_ANEXO4_1_FROM_GBIAN_ANEXO2_TITLE',
+    'id' => 'GBIAN_ANEXO2_GBIA4_ANEXO4_1GBIAN_ANEXO2_IDA',
+    'width' => '10%',
+    'default' => true,
+    'name' => 'gbian_anexo2_gbia4_anexo4_1_name',
+  ),
+  'gbia4_anexo4_gbia3_anexo3_name' => 
+  array (
+    'type' => 'relate',
+    'link' => true,
+    'label' => 'LBL_GBIA4_ANEXO4_GBIA3_ANEXO3_FROM_GBIA3_ANEXO3_TITLE',
+    'id' => 'GBIA4_ANEXO4_GBIA3_ANEXO3GBIA3_ANEXO3_IDA',
+    'width' => '10%',
+    'default' => true,
+    'name' => 'gbia4_anexo4_gbia3_anexo3_name',
+  ),
+  'prestador_servicio' => 
+  array (
+    'type' => 'relate',
+    'studio' => 'visible',
+    'label' => 'LBL_PRESTADOR_SERVICIO',
+    'id' => 'IPS_IPS_ID_C',
+    'link' => true,
+    'width' => '10%',
+    'default' => true,
+    'name' => 'prestador_servicio',
+  ),
+  'nombquienautoriza_c' => 
+  array (
+    'type' => 'varchar',
+    'default' => true,
+    'label' => 'LBL_NOMBQUIENAUTORIZA',
+    'width' => '10%',
+    'name' => 'nombquienautoriza_c',
+  ),
+  'date_entered' => 
+  array (
+    'width' => '15%',
+    'label' => 'LBL_DATE_ENTERED',
+    'default' => true,
+    'name' => 'date_entered',
+  ),
+  'fecha_recibida_c' => 
+  array (
+    'type' => 'datetimecombo',
+    'default' => true,
+    'label' => 'LBL_FECHA_RECIBIDA',
+    'width' => '10%',
+  ),
+  'created_by' => 
+  array (
+    'width' => '8%',
+    'label' => 'LBL_CREATED',
+    'name' => 'created_by',
+    'default' => true,
+  ),
+  'date_modified' => 
+  array (
+    'width' => '15%',
+    'label' => 'LBL_DATE_MODIFIED',
+    'name' => 'date_modified',
+    'default' => false,
+  ),
+  'assigned_user_name' => 
+  array (
+    'width' => '8%',
+    'label' => 'LBL_LIST_ASSIGNED_USER',
+    'name' => 'assigned_user_name',
+    'default' => false,
+  ),
+);

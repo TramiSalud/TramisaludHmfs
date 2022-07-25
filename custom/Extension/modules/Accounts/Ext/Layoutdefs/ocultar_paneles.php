@@ -1,0 +1,11 @@
+<?php
+ unset($layout_defs['Accounts']['subpanel_setup']['accounts']);
+ unset($layout_defs['Accounts']['subpanel_setup']['leads']);
+ unset($layout_defs['Accounts']['subpanel_setup']['project']);
+ unset($layout_defs['Accounts']['subpanel_setup']['bugs']);
+ unset($layout_defs['Accounts']['subpanel_setup']['opportunities']);
+ //unset($layout_defs['Accounts']['subpanel_setup']['activities']);
+ //unset($layout_defs['Accounts']['subpanel_setup']['history']);
+ //unset($layout_defs['Accounts']['subpanel_setup']['documents']);
+ unset($layout_defs['Accounts']['subpanel_setup']['gbia3_anexo3_accounts']);
+?>

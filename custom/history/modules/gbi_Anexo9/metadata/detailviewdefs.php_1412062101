@@ -1,0 +1,491 @@
+<?php
+$module_name = 'gbi_Anexo9';
+$viewdefs [$module_name] = 
+array (
+  'DetailView' => 
+  array (
+    'templateMeta' => 
+    array (
+      'form' => 
+      array (
+        'buttons' => 
+        array (
+          0 => 'EDIT',
+          2 => 'DELETE',
+          4 => 
+          array (
+            'customCode' => '<input title="GenerarPDF" type="submit" name="button" value="Generar PDF Anexo 9" 
+							onClick="window.open(\'index.php?module=gbi_Anexo9&action=GenerarPdf&record={$fields.id.value}\')";>',
+            'name' => 'GenerarPDF',
+            'label' => 'Generar PDF',
+          ),
+          5 => 
+          array (
+            'customCode' => '<input title="EnviarCorreo" type="submit" name="button" value="Enviar Correo" onClick="window.open(\'index.php?module=gbi_Anexo9&action=EnviarCorreo&record={$fields.id.value}\')";>',
+            'name' => 'EnviarCorreo',
+            'label' => 'Enviar Correo',
+          ),
+          6 => 
+          array (
+            'customCode' => '<input title="GenerarTRAZA" type="submit" name="button" value="Generar Trazabilidad" onClick="window.open(\'index.php?module=gbi_Anexo9&action=GenerarTraza&record={$fields.id.value}\')";>',
+            'name' => 'GenerarTRAZA',
+            'label' => 'Generar TRAZA',
+          ),
+        ),
+      ),
+      'maxColumns' => '2',
+      'widths' => 
+      array (
+        0 => 
+        array (
+          'label' => '10',
+          'field' => '30',
+        ),
+        1 => 
+        array (
+          'label' => '10',
+          'field' => '30',
+        ),
+      ),
+      'useTabs' => false,
+      'tabDefs' => 
+      array (
+        'DEFAULT' => 
+        array (
+          'newTab' => false,
+          'panelDefault' => 'expanded',
+        ),
+        'LBL_EDITVIEW_PANEL1' => 
+        array (
+          'newTab' => false,
+          'panelDefault' => 'expanded',
+        ),
+        'LBL_EDITVIEW_PANEL2' => 
+        array (
+          'newTab' => false,
+          'panelDefault' => 'expanded',
+        ),
+        'LBL_EDITVIEW_PANEL7' => 
+        array (
+          'newTab' => false,
+          'panelDefault' => 'expanded',
+        ),
+        'LBL_EDITVIEW_PANEL6' => 
+        array (
+          'newTab' => false,
+          'panelDefault' => 'expanded',
+        ),
+        'LBL_EDITVIEW_PANEL4' => 
+        array (
+          'newTab' => false,
+          'panelDefault' => 'expanded',
+        ),
+        'LBL_EDITVIEW_PANEL5' => 
+        array (
+          'newTab' => false,
+          'panelDefault' => 'expanded',
+        ),
+        'LBL_DETAILVIEW_PANEL9' => 
+        array (
+          'newTab' => false,
+          'panelDefault' => 'expanded',
+        ),
+      ),
+    ),
+    'panels' => 
+    array (
+      'default' => 
+      array (
+        0 => 
+        array (
+          0 => 'name',
+          1 => '',
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            'name' => 'date_entered',
+            'comment' => 'Date record created',
+            'label' => 'LBL_DATE_ENTERED',
+          ),
+          1 => 
+          array (
+            'name' => 'date_modified',
+            'comment' => 'Date record last modified',
+            'label' => 'LBL_DATE_MODIFIED',
+          ),
+        ),
+        2 => 
+        array (
+          0 => 
+          array (
+            'name' => 'created_by_name',
+            'label' => 'LBL_CREATED',
+          ),
+          1 => 
+          array (
+            'name' => 'modified_by_name',
+            'label' => 'LBL_MODIFIED_NAME',
+          ),
+        ),
+        3 => 
+        array (
+          0 => 
+          array (
+            'name' => 'fecha_envio_correo_c',
+            'label' => 'LBL_FECHA_ENVIO_CORREO',
+          ),
+          1 => 
+          array (
+            'name' => 'numero_reintentos_c',
+            'label' => 'LBL_NUMERO_REINTENTOS',
+          ),
+        ),
+        4 => 
+        array (
+          0 => 
+          array (
+            'name' => 'correo_enviado_c',
+            'label' => 'LBL_CORREO_ENVIADO',
+          ),
+          1 => 
+          array (
+            'name' => 'marcado_enviar_c',
+            'label' => 'LBL_MARCADO_ENVIAR',
+          ),
+        ),
+        5 => 
+        array (
+          0 => 
+          array (
+            'name' => 'rebotado_c',
+            'label' => 'LBL_REBOTADO',
+          ),
+          1 => '',
+        ),
+      ),
+      'lbl_editview_panel1' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            'name' => 'prestador',
+            'studio' => 'visible',
+            'label' => 'LBL_PRESTADOR',
+          ),
+          1 => '',
+        ),
+      ),
+      'lbl_editview_panel2' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            'name' => 'eps',
+            'studio' => 'visible',
+            'label' => 'LBL_EPS',
+          ),
+          1 => '',
+        ),
+      ),
+      'lbl_editview_panel7' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            'name' => 'accounts_gbi_anexo9_1_name',
+          ),
+          1 => '',
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            'name' => 'primernombre',
+            'label' => 'LBL_PRIMERNOMBRE',
+          ),
+          1 => 
+          array (
+            'name' => 'segundonombre',
+            'label' => 'LBL_SEGUNDONOMBRE',
+          ),
+        ),
+        2 => 
+        array (
+          0 => 
+          array (
+            'name' => 'primerapellido',
+            'label' => 'LBL_PRIMERAPELLIDO',
+          ),
+          1 => 
+          array (
+            'name' => 'segundoapellido',
+            'label' => 'LBL_SEGUNDOAPELLIDO',
+          ),
+        ),
+        3 => 
+        array (
+          0 => 
+          array (
+            'name' => 'celular',
+            'label' => 'LBL_CELULAR',
+          ),
+          1 => 
+          array (
+            'name' => 'correoemail',
+            'label' => 'LBL_CORREOEMAIL',
+          ),
+        ),
+      ),
+      'lbl_editview_panel6' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            'name' => 'tipo_documento',
+            'studio' => 'visible',
+            'label' => 'LBL_TIPO_DOCUMENTO',
+          ),
+          1 => 
+          array (
+            'name' => 'documento_respon',
+            'label' => 'LBL_DOCUMENTO_RESPON',
+          ),
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            'name' => 'primer_nom',
+            'label' => 'LBL_PRIMER_NOM',
+          ),
+          1 => 
+          array (
+            'name' => 'sdo_nombre',
+            'label' => 'LBL_SDO_NOMBRE',
+          ),
+        ),
+        2 => 
+        array (
+          0 => 
+          array (
+            'name' => 'primer_apellido',
+            'label' => 'LBL_PRIMER_APELLIDO',
+          ),
+          1 => 
+          array (
+            'name' => 'segundo_apellido',
+            'label' => 'LBL_SEGUNDO_APELLIDO',
+          ),
+        ),
+        3 => 
+        array (
+          0 => 
+          array (
+            'name' => 'dpto',
+            'studio' => 'visible',
+            'label' => 'LBL_DPTO',
+          ),
+          1 => 
+          array (
+            'name' => 'ciudad',
+            'studio' => 'visible',
+            'label' => 'LBL_CIUDAD',
+          ),
+        ),
+        4 => 
+        array (
+          0 => 
+          array (
+            'name' => 'direccion_r',
+            'label' => 'LBL_DIRECCION_R',
+          ),
+          1 => 
+          array (
+            'name' => 'telefono',
+            'label' => 'LBL_TELEFONO',
+          ),
+        ),
+      ),
+      'lbl_editview_panel4' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            'name' => 'especialista',
+            'studio' => 'visible',
+            'label' => 'LBL_ESPECIALISTA',
+          ),
+          1 => 
+          array (
+            'name' => 'nombreespecialistaso',
+            'label' => 'LBL_NOMBREESPECIALISTASO',
+          ),
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            'name' => 'telefonoespecialista',
+            'label' => 'LBL_TELEFONOESPECIALISTA',
+          ),
+          1 => 
+          array (
+            'name' => 'apellidoespecialistaso',
+            'label' => 'LBL_APELLIDOESPECIALISTASO',
+          ),
+        ),
+        2 => 
+        array (
+          0 => 
+          array (
+            'name' => 'extensionsolicitante',
+            'label' => 'LBL_EXTENSIONSOLICITANTE',
+          ),
+          1 => 
+          array (
+            'name' => 'cargoactividad',
+            'label' => 'LBL_CARGOACTIVIDAD',
+          ),
+        ),
+        3 => 
+        array (
+          0 => 
+          array (
+            'name' => 'celularsolicitante',
+            'label' => 'LBL_CELULARSOLICITANTE',
+          ),
+        ),
+        4 => 
+        array (
+          0 => 
+          array (
+            'name' => 'servicio_soli_refe',
+            'studio' => 'visible',
+            'label' => 'LBL_SERVICIO_SOLI_REFE',
+          ),
+          1 => 
+          array (
+            'name' => 'dxcups_c',
+            'label' => 'LBL_DXCUPS',
+          ),
+        ),
+        5 => 
+        array (
+          0 => 
+          array (
+            'name' => 'cups2_c',
+            'studio' => 'visible',
+            'label' => 'LBL_CUPS2',
+          ),
+          1 => 
+          array (
+            'name' => 'dxcups2_c',
+            'label' => 'LBL_DXCUPS2',
+          ),
+        ),
+        6 => 
+        array (
+          0 => 
+          array (
+            'name' => 'cups3_c',
+            'studio' => 'visible',
+            'label' => 'LBL_CUPS3',
+          ),
+          1 => 
+          array (
+            'name' => 'dxcups3_c',
+            'label' => 'LBL_DXCUPS3',
+          ),
+        ),
+        7 => 
+        array (
+          0 => 
+          array (
+            'name' => 'servicio_soli',
+            'studio' => 'visible',
+            'label' => 'LBL_SERVICIO_SOLI',
+          ),
+        ),
+      ),
+      'lbl_editview_panel5' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            'name' => 'description',
+            'comment' => 'Full text of the note',
+            'label' => 'LBL_DESCRIPTION',
+          ),
+          1 => '',
+        ),
+      ),
+      'lbl_detailview_panel9' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            'name' => 'servicio_c',
+            'label' => 'LBL_SERVICIO',
+          ),
+          1 => 
+          array (
+            'name' => 'cama_c',
+            'label' => 'LBL_CAMA',
+          ),
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            'name' => 'codigo_diagnostico_c',
+            'studio' => 'visible',
+            'label' => 'LBL_CODIGO_DIAGNOSTICO',
+          ),
+          1 => 
+          array (
+            'name' => 'dxcodigodiagnostico_c',
+            'label' => 'LBL_DXCODIGODIAGNOSTICO',
+          ),
+        ),
+        2 => 
+        array (
+          0 => 
+          array (
+            'name' => 'codigo_de_diagnostico_2_c',
+            'studio' => 'visible',
+            'label' => 'LBL_CODIGO_DE_DIAGNOSTICO_2',
+          ),
+          1 => 
+          array (
+            'name' => 'dxcodigodignostico2_c',
+            'label' => 'LBL_DXCODIGODIGNOSTICO2',
+          ),
+        ),
+        3 => 
+        array (
+          0 => 
+          array (
+            'name' => 'codigo_diagnostico_3_c',
+            'studio' => 'visible',
+            'label' => 'LBL_CODIGO_DIAGNOSTICO_3',
+          ),
+          1 => 
+          array (
+            'name' => 'dxcodigodiagnostico3_c',
+            'label' => 'LBL_DXCODIGODIAGNOSTICO3',
+          ),
+        ),
+      ),
+    ),
+  ),
+);
+?>

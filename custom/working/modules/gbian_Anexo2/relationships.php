@@ -1,0 +1,288 @@
+<?php
+/*********************************************************************************
+ * SugarCRM Community Edition is a customer relationship management program developed by
+ * SugarCRM, Inc. Copyright (C) 2004-2013 SugarCRM Inc.
+ * 
+ * This program is free software; you can redistribute it and/or modify it under
+ * the terms of the GNU Affero General Public License version 3 as published by the
+ * Free Software Foundation with the addition of the following permission added
+ * to Section 15 as permitted in Section 7(a): FOR ANY PART OF THE COVERED WORK
+ * IN WHICH THE COPYRIGHT IS OWNED BY SUGARCRM, SUGARCRM DISCLAIMS THE WARRANTY
+ * OF NON INFRINGEMENT OF THIRD PARTY RIGHTS.
+ * 
+ * This program is distributed in the hope that it will be useful, but WITHOUT
+ * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+ * FOR A PARTICULAR PURPOSE.  See the GNU Affero General Public License for more
+ * details.
+ * 
+ * You should have received a copy of the GNU Affero General Public License along with
+ * this program; if not, see http://www.gnu.org/licenses or write to the Free
+ * Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA
+ * 02110-1301 USA.
+ * 
+ * You can contact SugarCRM, Inc. headquarters at 10050 North Wolfe Road,
+ * SW2-130, Cupertino, CA 95014, USA. or at email address contact@sugarcrm.com.
+ * 
+ * The interactive user interfaces in modified source and object code versions
+ * of this program must display Appropriate Legal Notices, as required under
+ * Section 5 of the GNU Affero General Public License version 3.
+ * 
+ * In accordance with Section 7(b) of the GNU Affero General Public License version 3,
+ * these Appropriate Legal Notices must retain the display of the "Powered by
+ * SugarCRM" logo. If the display of the logo is not reasonably feasible for
+ * technical reasons, the Appropriate Legal Notices must display the words
+ * "Powered by SugarCRM".
+ ********************************************************************************/
+
+$relationships = array (
+  'gbian_anexo2_modified_user' => 
+  array (
+    'id' => '4652abab-ae3a-93a3-ac82-53f4bfdc2977',
+    'relationship_name' => 'gbian_anexo2_modified_user',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'gbian_Anexo2',
+    'rhs_table' => 'gbian_anexo2',
+    'rhs_key' => 'modified_user_id',
+    'join_table' => NULL,
+    'join_key_lhs' => NULL,
+    'join_key_rhs' => NULL,
+    'relationship_type' => 'one-to-many',
+    'relationship_role_column' => NULL,
+    'relationship_role_column_value' => NULL,
+    'reverse' => '0',
+    'deleted' => '0',
+    'readonly' => true,
+    'rhs_subpanel' => NULL,
+    'lhs_subpanel' => NULL,
+    'relationship_only' => false,
+    'for_activities' => false,
+    'is_custom' => false,
+    'from_studio' => true,
+  ),
+  'gbian_anexo2_created_by' => 
+  array (
+    'id' => '4ce1c299-0524-d8bb-1334-53f4bf2257d8',
+    'relationship_name' => 'gbian_anexo2_created_by',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'gbian_Anexo2',
+    'rhs_table' => 'gbian_anexo2',
+    'rhs_key' => 'created_by',
+    'join_table' => NULL,
+    'join_key_lhs' => NULL,
+    'join_key_rhs' => NULL,
+    'relationship_type' => 'one-to-many',
+    'relationship_role_column' => NULL,
+    'relationship_role_column_value' => NULL,
+    'reverse' => '0',
+    'deleted' => '0',
+    'readonly' => true,
+    'rhs_subpanel' => NULL,
+    'lhs_subpanel' => NULL,
+    'relationship_only' => false,
+    'for_activities' => false,
+    'is_custom' => false,
+    'from_studio' => true,
+  ),
+  'gbian_anexo2_assigned_user' => 
+  array (
+    'id' => '5503d731-55ed-4e10-7d01-53f4bf6ed1de',
+    'relationship_name' => 'gbian_anexo2_assigned_user',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'gbian_Anexo2',
+    'rhs_table' => 'gbian_anexo2',
+    'rhs_key' => 'assigned_user_id',
+    'join_table' => NULL,
+    'join_key_lhs' => NULL,
+    'join_key_rhs' => NULL,
+    'relationship_type' => 'one-to-many',
+    'relationship_role_column' => NULL,
+    'relationship_role_column_value' => NULL,
+    'reverse' => '0',
+    'deleted' => '0',
+    'readonly' => true,
+    'rhs_subpanel' => NULL,
+    'lhs_subpanel' => NULL,
+    'relationship_only' => false,
+    'for_activities' => false,
+    'is_custom' => false,
+    'from_studio' => true,
+  ),
+  'gbian_anexo2_accounts' => 
+  array (
+    'id' => 'c52f393b-2725-80dd-7732-53f4bfc66c11',
+    'relationship_name' => 'gbian_anexo2_accounts',
+    'lhs_module' => 'Accounts',
+    'lhs_table' => 'accounts',
+    'lhs_key' => 'id',
+    'rhs_module' => 'gbian_Anexo2',
+    'rhs_table' => 'gbian_anexo2',
+    'rhs_key' => 'id',
+    'join_table' => 'gbian_anexo2_accounts_c',
+    'join_key_lhs' => 'gbian_anexo2_accountsaccounts_ida',
+    'join_key_rhs' => 'gbian_anexo2_accountsgbian_anexo2_idb',
+    'relationship_type' => 'one-to-many',
+    'relationship_role_column' => NULL,
+    'relationship_role_column_value' => NULL,
+    'reverse' => '0',
+    'deleted' => '0',
+    'readonly' => true,
+    'rhs_subpanel' => 'default',
+    'lhs_subpanel' => NULL,
+    'is_custom' => true,
+    'relationship_only' => false,
+    'for_activities' => false,
+    'from_studio' => true,
+  ),
+  'gbian_anexo2_aut_autorizacionestelefonicas_1' => 
+  array (
+    'id' => 'c59c4e44-d166-4010-034d-53f4bf0576ff',
+    'relationship_name' => 'gbian_anexo2_aut_autorizacionestelefonicas_1',
+    'lhs_module' => 'gbian_Anexo2',
+    'lhs_table' => 'gbian_anexo2',
+    'lhs_key' => 'id',
+    'rhs_module' => 'AUT_AutorizacionesTelefonicas',
+    'rhs_table' => 'aut_autorizacionestelefonicas',
+    'rhs_key' => 'id',
+    'join_table' => 'gbian_anexo2_aut_autorizacionestelefonicas_1_c',
+    'join_key_lhs' => 'gbian_anexo2_aut_autorizacionestelefonicas_1gbian_anexo2_ida',
+    'join_key_rhs' => 'gbian_anex5ba6fonicas_idb',
+    'relationship_type' => 'one-to-many',
+    'relationship_role_column' => NULL,
+    'relationship_role_column_value' => NULL,
+    'reverse' => '0',
+    'deleted' => '0',
+    'readonly' => true,
+    'rhs_subpanel' => NULL,
+    'lhs_subpanel' => NULL,
+    'from_studio' => true,
+    'is_custom' => true,
+    'relationship_only' => false,
+    'for_activities' => false,
+  ),
+  'gbian_anexo2_documents_1' => 
+  array (
+    'id' => 'c6081219-fffc-56fa-7789-53f4bf84c720',
+    'relationship_name' => 'gbian_anexo2_documents_1',
+    'lhs_module' => 'gbian_Anexo2',
+    'lhs_table' => 'gbian_anexo2',
+    'lhs_key' => 'id',
+    'rhs_module' => 'Documents',
+    'rhs_table' => 'documents',
+    'rhs_key' => 'id',
+    'join_table' => 'gbian_anexo2_documents_1_c',
+    'join_key_lhs' => 'gbian_anexo2_documents_1gbian_anexo2_ida',
+    'join_key_rhs' => 'gbian_anexo2_documents_1documents_idb',
+    'relationship_type' => 'one-to-many',
+    'relationship_role_column' => NULL,
+    'relationship_role_column_value' => NULL,
+    'reverse' => '0',
+    'deleted' => '0',
+    'readonly' => true,
+    'rhs_subpanel' => 'default',
+    'lhs_subpanel' => NULL,
+    'from_studio' => true,
+    'is_custom' => true,
+    'relationship_only' => false,
+    'for_activities' => false,
+  ),
+  'gbian_anexo2_gbia4_anexo4_1' => 
+  array (
+    'id' => 'c6914ee7-cc4e-c67b-81ed-53f4bf6c22bc',
+    'relationship_name' => 'gbian_anexo2_gbia4_anexo4_1',
+    'lhs_module' => 'gbian_Anexo2',
+    'lhs_table' => 'gbian_anexo2',
+    'lhs_key' => 'id',
+    'rhs_module' => 'gbiA4_Anexo4',
+    'rhs_table' => 'gbia4_anexo4',
+    'rhs_key' => 'id',
+    'join_table' => 'gbian_anexo2_gbia4_anexo4_1_c',
+    'join_key_lhs' => 'gbian_anexo2_gbia4_anexo4_1gbian_anexo2_ida',
+    'join_key_rhs' => 'gbian_anexo2_gbia4_anexo4_1gbia4_anexo4_idb',
+    'relationship_type' => 'one-to-many',
+    'relationship_role_column' => NULL,
+    'relationship_role_column_value' => NULL,
+    'reverse' => '0',
+    'deleted' => '0',
+    'readonly' => true,
+    'rhs_subpanel' => 'default',
+    'lhs_subpanel' => NULL,
+    'from_studio' => true,
+    'is_custom' => true,
+    'relationship_only' => false,
+    'for_activities' => false,
+  ),
+  'gbian_anexo2_gbihi_historialcorreo_1' => 
+  array (
+    'id' => 'c6fa9397-b1ec-9631-4da1-53f4bf47f285',
+    'relationship_name' => 'gbian_anexo2_gbihi_historialcorreo_1',
+    'lhs_module' => 'gbian_Anexo2',
+    'lhs_table' => 'gbian_anexo2',
+    'lhs_key' => 'id',
+    'rhs_module' => 'GBIHI_HistorialCorreo',
+    'rhs_table' => 'gbihi_historialcorreo',
+    'rhs_key' => 'id',
+    'join_table' => 'gbian_anexo2_gbihi_historialcorreo_1_c',
+    'join_key_lhs' => 'gbian_anexo2_gbihi_historialcorreo_1gbian_anexo2_ida',
+    'join_key_rhs' => 'gbian_anexo2_gbihi_historialcorreo_1gbihi_historialcorreo_idb',
+    'relationship_type' => 'one-to-many',
+    'relationship_role_column' => NULL,
+    'relationship_role_column_value' => NULL,
+    'reverse' => '0',
+    'deleted' => '0',
+    'readonly' => true,
+    'rhs_subpanel' => 'default',
+    'lhs_subpanel' => NULL,
+    'from_studio' => true,
+    'is_custom' => true,
+    'relationship_only' => false,
+    'for_activities' => false,
+  ),
+  'gbian_anexo2_tasks_1' => 
+  array (
+    'id' => 'c77b5595-ca44-eff7-60dd-53f4bfebb700',
+    'relationship_name' => 'gbian_anexo2_tasks_1',
+    'lhs_module' => 'gbian_Anexo2',
+    'lhs_table' => 'gbian_anexo2',
+    'lhs_key' => 'id',
+    'rhs_module' => 'Tasks',
+    'rhs_table' => 'tasks',
+    'rhs_key' => 'id',
+    'join_table' => 'gbian_anexo2_tasks_1_c',
+    'join_key_lhs' => 'gbian_anexo2_tasks_1gbian_anexo2_ida',
+    'join_key_rhs' => 'gbian_anexo2_tasks_1tasks_idb',
+    'relationship_type' => 'one-to-many',
+    'relationship_role_column' => NULL,
+    'relationship_role_column_value' => NULL,
+    'reverse' => '0',
+    'deleted' => '0',
+    'readonly' => true,
+    'rhs_subpanel' => 'default',
+    'lhs_subpanel' => NULL,
+    'from_studio' => true,
+    'is_custom' => true,
+    'relationship_only' => false,
+    'for_activities' => false,
+  ),
+  'gbian_anexo2_calls_1' => 
+  array (
+    'rhs_label' => 'Llamadas',
+    'lhs_label' => 'ANEXO 2',
+    'rhs_subpanel' => 'default',
+    'lhs_module' => 'gbian_Anexo2',
+    'rhs_module' => 'Calls',
+    'relationship_type' => 'one-to-many',
+    'readonly' => true,
+    'deleted' => false,
+    'relationship_only' => false,
+    'for_activities' => false,
+    'is_custom' => false,
+    'from_studio' => true,
+    'relationship_name' => 'gbian_anexo2_calls_1',
+  ),
+);

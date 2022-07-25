@@ -1,0 +1,100 @@
+<?php
+$searchdefs ['Accounts'] = 
+array (
+  'layout' => 
+  array (
+    'basic_search' => 
+    array (
+      'name' => 
+      array (
+        'name' => 'name',
+        'default' => true,
+        'width' => '10%',
+      ),
+      'primernombre_c' => 
+      array (
+        'type' => 'varchar',
+        'default' => true,
+        'label' => 'LBL_PRIMERNOMBRE',
+        'width' => '10%',
+        'name' => 'primernombre_c',
+      ),
+      'segundonombre_c' => 
+      array (
+        'type' => 'varchar',
+        'default' => true,
+        'label' => 'LBL_SEGUNDONOMBRE',
+        'width' => '10%',
+        'name' => 'segundonombre_c',
+      ),
+      'primerapellido_c' => 
+      array (
+        'type' => 'varchar',
+        'default' => true,
+        'label' => 'LBL_PRIMERAPELLIDO',
+        'width' => '10%',
+        'name' => 'primerapellido_c',
+      ),
+      'segundoapellido_c' => 
+      array (
+        'type' => 'varchar',
+        'default' => true,
+        'label' => 'LBL_SEGUNDOAPELLIDO',
+        'width' => '10%',
+        'name' => 'segundoapellido_c',
+      ),
+    ),
+    'advanced_search' => 
+    array (
+      'name' => 
+      array (
+        'name' => 'name',
+        'default' => true,
+        'width' => '10%',
+      ),
+      'primernombre_c' => 
+      array (
+        'type' => 'varchar',
+        'default' => true,
+        'label' => 'LBL_PRIMERNOMBRE',
+        'width' => '10%',
+        'name' => 'primernombre_c',
+      ),
+      'segundonombre_c' => 
+      array (
+        'type' => 'varchar',
+        'default' => true,
+        'label' => 'LBL_SEGUNDONOMBRE',
+        'width' => '10%',
+        'name' => 'segundonombre_c',
+      ),
+      'primerapellido_c' => 
+      array (
+        'type' => 'varchar',
+        'default' => true,
+        'label' => 'LBL_PRIMERAPELLIDO',
+        'width' => '10%',
+        'name' => 'primerapellido_c',
+      ),
+      'segundoapellido_c' => 
+      array (
+        'type' => 'varchar',
+        'default' => true,
+        'label' => 'LBL_SEGUNDOAPELLIDO',
+        'width' => '10%',
+        'name' => 'segundoapellido_c',
+      ),
+    ),
+  ),
+  'templateMeta' => 
+  array (
+    'maxColumns' => '3',
+    'maxColumnsBasic' => '4',
+    'widths' => 
+    array (
+      'label' => '10',
+      'field' => '30',
+    ),
+  ),
+);
+?>
